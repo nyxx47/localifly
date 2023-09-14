@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <!-- <div>
     <client-only>
       <Vue3Lottie
         animationLink="https://assets10.lottiefiles.com/packages/lf20_soCRuE.json"
@@ -8,6 +8,7 @@
       />
     </client-only>
     
-  </div>
+  </div> -->
+  <MoleculesNavbar />
   <NuxtPage />
 </template>
