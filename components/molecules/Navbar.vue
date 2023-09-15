@@ -18,11 +18,50 @@
         <OrganismsButton content="Sign In" type="tertiary" />
         <OrganismsButton content="Sign Up" type="secondary" />
       </div>
+      <div
+        class="m-menu"
+        :class="{ 'menu-open': isActive }"
+        @click="Toggle(isActive)"
+      >
+        <svg class="m-menu-icon">
+          <line
+            x1="0"
+            y1="50%"
+            x2="100%"
+            y2="50%"
+            class="top"
+            shape-rendering="crispEdges"
+          />
+          <line
+            x1="0"
+            y1="50%"
+            x2="100%"
+            y2="50%"
+            class="middle"
+            shape-rendering="crispEdges"
+          />
+          <line
+            x1="0"
+            y1="50%"
+            x2="100%"
+            y2="50%"
+            class="bottom"
+            shape-rendering="crispEdges"
+          />
+        </svg>
+      </div>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const isActive = ref(false);
+
+const Toggle = async (params) => {
+  isActive.value = !params;
+  console.log(isActive);
+};
+</script>
 
 <style lang="scss" scoped>
 .wrapper {
@@ -34,6 +73,7 @@
   position: fixed;
   background-color: $ArtboardSurface;
   width: 100%;
+  z-index: 100;
 
   .col {
     display: flex;
@@ -43,9 +83,14 @@
       width: 95%;
     }
 
+    .m-menu {
+      display: none;
+    }
+
     .menus {
       display: flex;
       gap: 24px;
+
       .menu {
         cursor: pointer;
         display: flex;
@@ -55,6 +100,113 @@
         font-weight: 400;
         line-height: 150%; /* 19.5px */
         letter-spacing: 0.26px;
+      }
+    }
+
+    // Menu Animation
+
+    .m-menu-icon {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      transform: scaleX(-1);
+    }
+
+    .m-menu-icon line {
+      stroke: #192a6b;
+      stroke-dasharray: 100%;
+      stroke-dashoffset: 0%;
+      transition: transform 0.3s, stroke-dashoffset 0.4s;
+      transform-origin: center;
+      stroke-width: 2px;
+    }
+
+    .m-menu-icon .top {
+      transform: translateY(-35%);
+      -webkit-transform: translateY(-35%);
+      -moz-transform: translateY(35%);
+      -ms-transform: translateY(35%);
+      -o-transform: translateY(35%);
+    }
+
+    .m-menu-icon .middle {
+      transform: scaleX(1);
+      -webkit-transform: scaleX(1);
+      -moz-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      -o-transform: scaleX(1);
+      transition: opacity 0.3s, transform 0.3s;
+      -webkit-transition: opacity 0.3s, transform 0.3s;
+      -moz-transition: opacity 0.3s, transform 0.3s;
+      -ms-transition: opacity 0.3s, transform 0.3s;
+      -o-transition: opacity 0.3s, transform 0.3s;
+    }
+
+    .m-menu-icon .bottom {
+      transform: translateY(33%);
+      -webkit-transform: translateY(33%);
+      -moz-transform: translateY(33%);
+      -ms-transform: translateY(33%);
+      -o-transform: translateY(33%);
+      stroke-dasharray: 100%;
+      stroke-dashoffset: 9px;
+    }
+    // .m-menu-icon:hover .bottom {
+    //   stroke-dashoffset: 0%;
+    // }
+
+    /*** Mode Croix ***/
+    .m-menu.menu-open .m-menu-icon .top {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      stroke-linecap: round;
+    }
+
+    .m-menu.menu-open .m-menu-icon .middle {
+      transform: scaleX(0.1);
+      -webkit-transform: scaleX(0.1);
+      -moz-transform: scaleX(0.1);
+      -ms-transform: scaleX(0.1);
+      -o-transform: scaleX(0.1);
+      opacity: 0;
+    }
+
+    .m-menu.menu-open .m-menu-icon line.bottom {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      stroke-linecap: round;
+    }
+
+    .m-menu.menu-open .m-menu-icon .bottom {
+      stroke-dashoffset: 0%;
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    .col {
+      .logo {
+        width: 100%;
+      }
+      .menus {
+        display: none;
+      }
+
+      .btn-h {
+        display: none;
+      }
+
+      .m-menu {
+        display: flex;
       }
     }
   }

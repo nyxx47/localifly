@@ -1,11 +1,14 @@
 <template>
   <div class="btn" :class="type">
-    <p>{{ content }}</p>
+    <p>
+      {{ content }}
+    </p>
+    <img v-if="icon" src="~/assets/icons/arrowup.svg" alt="arrow up" />
   </div>
 </template>
 
 <script setup>
-defineProps(["content", "type"]);
+defineProps(["content", "type", "icon"]);
 </script>
 
 <style lang="scss" scoped>
@@ -13,16 +16,29 @@ defineProps(["content", "type"]);
   display: flex;
   padding: 8px 16px;
   align-items: center;
-  gap: 4px;
   border-radius: 8px;
   height: fit-content;
   font-size: 13px;
   cursor: pointer;
+
+  img {
+    position: relative;
+    left: 3px;
+  }
 }
 
 .primary {
   background: #7053ff;
   transition: 0.3s ease;
+  font-size: 13px;
+
+  p {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 19.5px */
+    letter-spacing: 0.26px;
+    color: $TextWhite;
+  }
   &:hover {
     box-shadow: 0px 10px 30px 0px rgba(112, 83, 255, 0.2);
   }
