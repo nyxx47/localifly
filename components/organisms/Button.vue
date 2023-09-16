@@ -14,12 +14,14 @@ defineProps(["content", "type", "icon"]);
 <style lang="scss" scoped>
 .btn {
   display: flex;
-  padding: 8px 16px;
+  padding: 6px 12px;
   align-items: center;
   border-radius: 8px;
   height: fit-content;
-  font-size: 13px;
+  font-size: 14px;
   cursor: pointer;
+  min-height: 36px;
+  justify-content: center;
 
   img {
     position: relative;
@@ -30,11 +32,10 @@ defineProps(["content", "type", "icon"]);
 .primary {
   background: #7053ff;
   transition: 0.3s ease;
-  font-size: 13px;
 
   p {
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 150%; /* 19.5px */
     letter-spacing: 0.26px;
     color: $TextWhite;
@@ -53,6 +54,11 @@ defineProps(["content", "type", "icon"]);
   font-weight: 400;
   line-height: 150%; /* 22.5px */
   letter-spacing: 0.3px;
+
+  p {
+    position: relative;
+    top: -1px;
+  }
 }
 
 .tertiary {
@@ -62,5 +68,9 @@ defineProps(["content", "type", "icon"]);
   font-weight: 400;
   line-height: 150%; /* 19.5px */
   letter-spacing: 0.26px;
+  p {
+    position: relative;
+    top: -1px;
+  }
 }
 </style>
