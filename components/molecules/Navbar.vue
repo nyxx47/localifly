@@ -105,7 +105,7 @@ const Toggle = async (params) => {
           font-size: 14px;
           font-style: normal;
           font-weight: 400;
-          line-height: 150%; /* 19.5px */
+          line-height: 145%; /* 19.5px */
           letter-spacing: 0.26px;
         }
       }
