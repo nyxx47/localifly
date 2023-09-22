@@ -22,7 +22,7 @@ defineProps(["content", "type", "icon"]);
   cursor: pointer;
   min-height: 36px;
   justify-content: center;
-
+  width: fit-content;
   img {
     position: relative;
     left: 3px;
@@ -46,7 +46,7 @@ defineProps(["content", "type", "icon"]);
 }
 
 .secondary {
-  border: 1px solid #293237;
+  border: 1px solid #e8ebee;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
