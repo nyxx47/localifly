@@ -50,6 +50,39 @@
         </div>
       </div>
     </div>
+    <div class="section-3">
+      <div class="box-wrapper">
+        <h2>Bahasa yang tersedia</h2>
+        <p>
+          Kami menyediakan 2 bahasa dari 10+ penerjemah berkualitas untuk proyek
+          Anda.
+        </p>
+        <div class="languages">
+          <div class="language">
+            <div class="col">
+              <img src="@/assets/images/jp.svg" alt="bahasa jepang" />
+              <p>Japanese</p>
+            </div>
+            <img src="@/assets/icons/vv.svg" alt="vice versa" />
+            <div class="col">
+              <img src="@/assets/images/indonesia.svg" alt="bahasa indonesia" />
+              <p>Indonesian</p>
+            </div>
+          </div>
+          <div class="language">
+            <div class="col">
+              <img src="@/assets/images/uk.svg" alt="bahasa inggris" />
+              <p>English</p>
+            </div>
+            <img src="@/assets/icons/vv.svg" alt="vice versa" />
+            <div class="col">
+              <img src="@/assets/images/indonesia.svg" alt="bahasa indonesia" />
+              <p>Indonesian</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <MoleculesFooter />
   </div>
 </template>
@@ -59,6 +92,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  // SECTION #3
 
   // SECTION #1
   .section-1 {
@@ -101,7 +136,7 @@
     }
   }
 
-  // SECTION #1
+  // SECTION #2
   .section-2 {
     display: flex;
     flex-direction: column;
@@ -152,6 +187,91 @@
       }
     }
   }
+
+  .section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    padding-left: 72px;
+    padding-right: 72px;
+    width: 100%;
+    margin-bottom: 5em;
+    .box-wrapper {
+      border-radius: 16px;
+      background-color: $ArtboardSurfaceVariant;
+      display: flex;
+      padding: 56px 0px;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      align-self: stretch;
+      width: 100%;
+
+      h2 {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 0.72px;
+        color: #293237;
+        width: 50%;
+        text-align: center;
+        color: $TextPrimary;
+      }
+
+      p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.26px;
+        color: $TextSecondary;
+      }
+
+      .languages {
+        margin-top: 2.5em;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+
+        .language {
+          background-color: $ArtboardSurface;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 24px 32px;
+          border-radius: 16px;
+          gap: 24px;
+          transition: 0.6s ease;
+
+          &:hover {
+            box-shadow: -5px 15px 40px 0px rgba(41, 50, 55, 0.05);
+          }
+
+          .col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+
+            img {
+              width: 56px;
+            }
+
+            p {
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%; /* 19.5px */
+              letter-spacing: 0.26px;
+              color: $TextSecondary;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
@@ -196,6 +316,23 @@
 
       .wrap {
         flex-direction: column;
+      }
+    }
+
+    .section-3 {
+      padding-left: 20px;
+      padding-right: 20px;
+      .box-wrapper {
+        padding: 32px 20px;
+        text-align: center;
+
+        h2 {
+          font-size: 24px;
+          width: 80%;
+        }
+        .languages {
+          flex-direction: column;
+        }
       }
     }
   }
