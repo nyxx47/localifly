@@ -83,9 +83,41 @@
         </div>
       </div>
     </div>
+    <div class="section-4">
+      <div class="s-header">
+        <h2>5-Step Quality Kontrol Kami</h2>
+        <p>
+          Kami menawarkan lifetime guarantee di semua layanan terjemahan kami.
+          Ini karena kami sangat yakin dengan proses jaminan kualitas 5 langkah
+          kami yang memberikan terjemahan akurat 100%, setiap saat.
+        </p>
+      </div>
+      <div class="lottie-wrapper">
+        <client-only>
+          <Vue3Lottie
+            :animationData="LottieDesktop"
+            height="100%"
+            width="100%"
+            :scale="1"
+          />
+        </client-only>
+      </div>
+    </div>
     <MoleculesFooter />
   </div>
 </template>
+
+<script>
+import LottieDesktop from "@/assets/lottiefiles/workflow_desktop.json";
+
+export default {
+  data() {
+    return {
+      LottieDesktop: LottieDesktop,
+    };
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 .wrapper {
@@ -93,7 +125,48 @@
   flex-direction: column;
   align-items: center;
 
-  // SECTION #3
+  // SECTION-4
+  .section-4 {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    justify-content: center;
+    padding-top: 8em;
+    padding-bottom: 8em;
+    .s-header {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+      h2 {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 0.72px;
+        color: #293237;
+        width: 50%;
+        text-align: center;
+      }
+
+      p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.26px;
+        color: #708089;
+        width: 70%;
+        text-align: center;
+      }
+    }
+
+    .lottie-wrapper {
+      .lottie-animation-container {
+      }
+    }
+  }
 
   // SECTION #1
   .section-1 {
@@ -188,6 +261,7 @@
     }
   }
 
+  // SECTION #3
   .section-3 {
     display: flex;
     flex-direction: column;
@@ -332,6 +406,20 @@
         }
         .languages {
           flex-direction: column;
+        }
+      }
+    }
+
+    .section-4 {
+      .s-header {
+        h2 {
+          font-size: 24px;
+          width: 80%;
+        }
+
+        p {
+          width: 90%;
+          font-size: 14px;
         }
       }
     }
