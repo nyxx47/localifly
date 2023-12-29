@@ -1,17 +1,22 @@
 <template>
-  <div class="btn" :class="type">
-    <p>
-      {{ content }}
-    </p>
-    <img v-if="icon" src="~/assets/icons/arrowup.svg" alt="arrow up" />
-  </div>
+  <nuxt-link :to="to" :target="target">
+    <div class="btn" :class="type">
+      <p>
+        {{ content }}
+      </p>
+      <img v-if="icon" src="~/assets/icons/arrowup.svg" alt="arrow up" />
+    </div>
+  </nuxt-link>
 </template>
 
 <script setup>
-defineProps(["content", "type", "icon"]);
+defineProps(["content", "type", "icon", "to", "target"]);
 </script>
 
 <style lang="scss" scoped>
+a {
+  color: unset;
+}
 .btn {
   display: flex;
   padding: 6px 12px;
@@ -30,7 +35,7 @@ defineProps(["content", "type", "icon"]);
 }
 
 .primary {
-  background: #7053ff;
+  background: $ArtboardBlack;
   transition: 0.3s ease;
 
   p {
@@ -41,7 +46,7 @@ defineProps(["content", "type", "icon"]);
     color: $TextWhite;
   }
   &:hover {
-    box-shadow: 0px 10px 30px 0px rgba(112, 83, 255, 0.2);
+    box-shadow: 0px 4px 20px 0px rgba(74, 70, 70, 0.25);
   }
 }
 
@@ -56,8 +61,6 @@ defineProps(["content", "type", "icon"]);
   letter-spacing: 0.3px;
 
   p {
-    position: relative;
-    top: -1px;
   }
 }
 

@@ -3,21 +3,28 @@
     <div class="main">
       <div class="col">
         <img class="logo" src="~/assets/logo.svg" alr="transiago logo" />
-      </div>
-      <div class="col">
         <div class="menus">
-          <div class="menu">Home</div>
-          <div class="menu">
+          <nuxt-link to="/">Home</nuxt-link>
+          <!-- <div class="menu">
             Layanan <img src="~assets/icons/arrow1.svg" alt="arrow-down" />
-          </div>
-          <div class="menu">FAQ</div>
-          <div class="menu">Blog</div>
+          </div> -->
+          <nuxt-link to="/">FAQ</nuxt-link>
+          <!-- <div class="menu">Blog</div> -->
+          <nuxt-link to="/career" class="n-badge"
+            >Become a Translator</nuxt-link
+          >
         </div>
       </div>
+
       <div class="col">
         <div class="btn-h">
-          <OrganismsButton content="Sign In" type="tertiary" />
-          <OrganismsButton content="Sign Up" type="secondary" />
+          <p>info@localifly.com</p>
+          <OrganismsButton
+            content="Whatsapp"
+            type="secondary"
+            to="/test"
+            target="_blank"
+          />
         </div>
         <div
           class="m-menu"
@@ -85,9 +92,20 @@ const Toggle = async (params) => {
     .col {
       display: flex;
       align-items: center;
+      gap: 56px;
 
       .logo {
-        width: 95%;
+        width: 100px;
+      }
+
+      .btn-h {
+        p {
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 19.5px */
+          letter-spacing: 0.26px;
+        }
       }
 
       .m-menu {
@@ -98,7 +116,7 @@ const Toggle = async (params) => {
         display: flex;
         gap: 32px;
 
-        .menu {
+        a {
           cursor: pointer;
           display: flex;
           align-items: center;
@@ -107,6 +125,23 @@ const Toggle = async (params) => {
           font-weight: 400;
           line-height: 145%; /* 19.5px */
           letter-spacing: 0.26px;
+          color: $TextPrimary;
+        }
+
+        .n-badge {
+          background-color: $ArtboardSurfaceEmphasis;
+          padding: 6px 12px;
+          border-radius: 50px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 145%; /* 19.5px */
+          letter-spacing: 0.26px;
+          width: max-content;
+          color: $TextPrimary;
         }
       }
 
@@ -211,7 +246,13 @@ const Toggle = async (params) => {
         }
 
         .btn-h {
-          display: none;
+          p {
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 19.5px */
+            letter-spacing: 0.26px;
+          }
         }
 
         .m-menu {

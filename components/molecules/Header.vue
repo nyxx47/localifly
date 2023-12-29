@@ -8,9 +8,14 @@
           Layanan untuk setiap bisnis, organisasi, atau individu dengan
           berpengalaman dalam penerjemahan semua jenis dokumen.
         </p>
+        <OrganismsButton
+          content="Hubungi"
+          :icon="true"
+          type="primary"
+          to="/test"
+          target="_blank"
+        />
       </div>
-      <OrganismsButton content="Hubungi." :icon="true" type="primary" />
-      <img class="hero-img" src="~/assets/images/hero.png" alt="hero" />
     </div>
   </div>
 </template>
@@ -20,7 +25,7 @@
   background-color: $ArtboardSurfaceVariant;
   width: 100%;
   height: fit-content;
-  padding-top: 8em;
+  padding-top: 5em;
   display: flex;
   justify-content: center;
 
@@ -31,6 +36,8 @@
     align-items: center;
     gap: 32px;
     position: relative;
+    min-height: 80vh;
+    justify-content: center;
     .hero-img {
       // width: 50%;
     }
@@ -42,7 +49,7 @@
       align-items: center;
       .badge {
         border-radius: 32px;
-        border: 1px solid $ArtboardPeriwinkle;
+        border: 1px solid $ArtboardBorder;
         padding: 6px 12px;
         width: fit-content;
         font-size: 12px;
@@ -50,7 +57,7 @@
         font-weight: 400;
         line-height: 150%; /* 16.5px */
         letter-spacing: 0.22px;
-        color: $TextPeriwinkle;
+        color: $TextPrimary;
       }
 
       h1 {
