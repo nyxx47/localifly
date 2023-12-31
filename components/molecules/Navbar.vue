@@ -5,11 +5,20 @@
         <img class="logo" src="~/assets/logo.svg" alr="transiago logo" />
         <div class="menus">
           <nuxt-link to="/">Home</nuxt-link>
-          <!-- <div class="menu">
-            Layanan <img src="~assets/icons/arrow1.svg" alt="arrow-down" />
-          </div> -->
-          <nuxt-link to="/">FAQ</nuxt-link>
-          <!-- <div class="menu">Blog</div> -->
+
+          <nuxt-link to="/" class="services">
+            Services
+            <img src="~assets/icons/arrow1.svg" alt="arrow-down" />
+            <div class="menu-s">
+              <nuxt-link to="/document-translation"
+                >Document Translation</nuxt-link
+              >
+              <nuxt-link to="/proofreading">Proofreading</nuxt-link>
+            </div>
+          </nuxt-link>
+          <nuxt-link to="/faq">FAQ</nuxt-link>
+          <!-- <a href="/faq">tet</a> -->
+          <!-- <a href="/career" class="n-badge">Become a Translator</a> -->
           <nuxt-link to="/career" class="n-badge"
             >Become a Translator</nuxt-link
           >
@@ -116,7 +125,12 @@ const Toggle = async (params) => {
         display: flex;
         gap: 32px;
 
+        .services:hover > .menu-s {
+          display: flex;
+        }
+
         a {
+          position: relative;
           cursor: pointer;
           display: flex;
           align-items: center;
@@ -126,6 +140,20 @@ const Toggle = async (params) => {
           line-height: 145%; /* 19.5px */
           letter-spacing: 0.26px;
           color: $TextPrimary;
+
+          .menu-s {
+            position: absolute;
+            background: white;
+            padding: 12px 16px;
+            border-radius: 8px;
+            width: max-content;
+            top: 2em;
+            border: 1px solid $ArtboardBorder;
+            z-index: 10;
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+          }
         }
 
         .n-badge {

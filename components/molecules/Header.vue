@@ -16,6 +16,7 @@
           target="_blank"
         />
       </div>
+      <img class="h-grid" src="~/assets/images/grid.svg" alt="grid" />
     </div>
   </div>
 </template>
@@ -40,6 +41,10 @@
     justify-content: center;
     .hero-img {
       // width: 50%;
+    }
+
+    .h-grid {
+      position: absolute;
     }
 
     .content {
