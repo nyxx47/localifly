@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="main">
       <div class="col">
-        <img class="logo" src="~/assets/logo.svg" alr="transiago logo" />
+        <img class="logo" src="~/assets/logo.svg" alt="localifly logo" />
         <div class="menus">
           <nuxt-link to="/">Home</nuxt-link>
 
@@ -16,8 +16,10 @@
               <nuxt-link to="/proofreading">Proofreading</nuxt-link>
             </div>
           </div>
-          <nuxt-link to="faq">FAQ</nuxt-link>
-          <nuxt-link to="career" class="n-badge">Become a Translator</nuxt-link>
+          <nuxt-link to="/faq">FAQ</nuxt-link>
+          <nuxt-link to="/career" class="n-badge"
+            >Become a Translator</nuxt-link
+          >
         </div>
       </div>
 

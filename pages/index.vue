@@ -27,7 +27,7 @@
             Terjemahan tersumpah akta pendirian, Izin Prinsip, SIUP, TDP, NPWP,
             laporan keuangan, perjanjian (agreements) dll.
           </p>
-          <OrganismsButton content="Learn More" type="secondary" />
+          <!-- <OrganismsButton content="Learn More" type="secondary" /> -->
         </div>
         <div class="col">
           <img src="~/assets/icons/personal.svg" alt="perusahaan" />
@@ -36,7 +36,7 @@
             Jasa translate tersumpah (sworn translation) KTP, paspor, KK, akta
             lahir, surat kenal lahir, akta kawin, buku nikah, SKCK, dll
           </p>
-          <OrganismsButton content="Learn More" type="secondary" />
+          <!-- <OrganismsButton content="Learn More" type="secondary" /> -->
         </div>
         <div class="col">
           <img src="~/assets/icons/akademik.svg" alt="perusahaan" />
@@ -46,7 +46,7 @@
             sertifikat, kartu siswa, surat keterangan sehat, skripsi, tesis,
             dll.
           </p>
-          <OrganismsButton content="Learn More" type="secondary" />
+          <!-- <OrganismsButton content="Learn More" type="secondary" /> -->
         </div>
       </div>
     </div>
@@ -106,6 +106,18 @@
     <MoleculesFooter />
   </div>
 </template>
+<script setup>
+useHead({
+  title: "Localifly | Penerjemahan",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Layanan untuk setiap bisnis, organisasi, atau individu dengan berpengalaman dalam penerjemahan semua jenis dokumen.",
+    },
+  ],
+});
+</script>
 
 <script>
 import LottieDesktop from "@/assets/lottiefiles/workflow_desktop.json";
