@@ -6,7 +6,7 @@
         <div class="menus">
           <nuxt-link to="/">Home</nuxt-link>
 
-          <nuxt-link to="/" class="services">
+          <NuxtLink to="/" class="services">
             Services
             <img src="~assets/icons/arrow1.svg" alt="arrow-down" />
             <div class="menu-s">
@@ -15,13 +15,9 @@
               >
               <nuxt-link to="/proofreading">Proofreading</nuxt-link>
             </div>
-          </nuxt-link>
-          <nuxt-link to="/faq">FAQ</nuxt-link>
-          <!-- <a href="/faq">tet</a> -->
-          <!-- <a href="/career" class="n-badge">Become a Translator</a> -->
-          <nuxt-link to="/career" class="n-badge"
-            >Become a Translator</nuxt-link
-          >
+          </NuxtLink>
+          <NuxtLink to="/about">FAQ</NuxtLink>
+          <NuxtLink to="/about" class="n-badge">Become a Translator</NuxtLink>
         </div>
       </div>
 
