@@ -6,7 +6,7 @@
         <div class="menus">
           <nuxt-link to="/">Home</nuxt-link>
 
-          <NuxtLink to="/" class="services">
+          <div class="services">
             Services
             <img src="~assets/icons/arrow1.svg" alt="arrow-down" />
             <div class="menu-s">
@@ -15,9 +15,9 @@
               >
               <nuxt-link to="/proofreading">Proofreading</nuxt-link>
             </div>
-          </NuxtLink>
-          <NuxtLink to="/about">FAQ</NuxtLink>
-          <NuxtLink to="/about" class="n-badge">Become a Translator</NuxtLink>
+          </div>
+          <nuxt-link to="faq">FAQ</nuxt-link>
+          <nuxt-link to="career" class="n-badge">Become a Translator</nuxt-link>
         </div>
       </div>
 
@@ -121,6 +121,26 @@ const Toggle = async (params) => {
         display: flex;
         gap: 32px;
 
+        .services {
+          position: relative;
+          display: flex;
+          align-items: center;
+
+          .menu-s {
+            position: absolute;
+            background: white;
+            padding: 12px 16px;
+            border-radius: 8px;
+            width: max-content;
+            top: 2em;
+            border: 1px solid $ArtboardBorder;
+            z-index: 10;
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+          }
+        }
+
         .services:hover > .menu-s {
           display: flex;
         }
@@ -136,20 +156,6 @@ const Toggle = async (params) => {
           line-height: 145%; /* 19.5px */
           letter-spacing: 0.26px;
           color: $TextPrimary;
-
-          .menu-s {
-            position: absolute;
-            background: white;
-            padding: 12px 16px;
-            border-radius: 8px;
-            width: max-content;
-            top: 2em;
-            border: 1px solid $ArtboardBorder;
-            z-index: 10;
-            display: none;
-            flex-direction: column;
-            gap: 6px;
-          }
         }
 
         .n-badge {
