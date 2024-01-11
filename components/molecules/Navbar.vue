@@ -2,7 +2,13 @@
   <div class="wrapper">
     <div class="banner">
       <p>info@localifly.com</p>
-      <p>(+62)877-7744-6340<img src="~/assets/icons/copy.svg" alt="svg" /></p>
+      <p>
+        (+62)877-7744-6340<img
+          @click="copy"
+          src="~/assets/icons/copy.svg"
+          alt="svg"
+        />
+      </p>
     </div>
     <div class="main">
       <div class="col">
@@ -33,7 +39,7 @@
           <OrganismsButton
             content="Whatsapp"
             type="secondary"
-            to="/test"
+            to="https://wa.link/ktpzi4"
             target="_blank"
           />
         </div>
@@ -76,6 +82,14 @@
 
 <script setup>
 const isActive = ref(false);
+
+const copy = async () => {
+  try {
+    await navigator.clipboard.writeText("087777446340");
+  } catch ($e) {
+    console.log("Cannot copy");
+  }
+};
 
 const Toggle = async (params) => {
   isActive.value = !params;
@@ -294,6 +308,7 @@ const Toggle = async (params) => {
         display: flex;
         align-items: center;
         gap: 6px;
+        color: $TextWhite;
       }
     }
     .main {
