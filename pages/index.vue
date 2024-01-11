@@ -56,7 +56,7 @@
         <p>
           Kami menyediakan 4 bahasa yang dapat di terjemahkan ke dalam bahasa
           <br />
-          Indonesia oleh 5 penerjemah kami yang berkualitas untuk setiap proyek
+          Indonesia oleh 5 penerjemah kami yang profesional untuk setiap proyek
           Anda.
         </p>
         <div class="languages">
