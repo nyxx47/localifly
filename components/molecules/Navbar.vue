@@ -1,5 +1,9 @@
 <template>
   <div class="wrapper">
+    <div class="banner">
+      <p>info@localifly.com</p>
+      <p>(+62)877-7744-6340<img src="~/assets/icons/copy.svg" alt="svg" /></p>
+    </div>
     <div class="main">
       <div class="col">
         <img class="logo" src="~/assets/logo.svg" alt="localifly logo" />
@@ -88,6 +92,10 @@ const Toggle = async (params) => {
   z-index: 100;
   display: flex;
   justify-content: center;
+
+  .banner {
+    display: none;
+  }
 
   .main {
     display: flex;
@@ -266,9 +274,32 @@ const Toggle = async (params) => {
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
   .wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    flex-direction: column;
+
+    .banner {
+      display: flex;
+      background-color: $artboardBanner;
+      padding: 10px 20px;
+      justify-content: space-between;
+      p {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.26px;
+        color: $TextWhite;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+    }
     .main {
+      padding-top: 16px;
+      padding-left: 20px;
+      padding-right: 20px;
       .col {
         .logo {
           width: 100%;

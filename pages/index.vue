@@ -54,7 +54,9 @@
       <div class="box-wrapper">
         <h2>Bahasa yang tersedia</h2>
         <p>
-          Kami menyediakan 2 bahasa dari 10+ penerjemah berkualitas untuk proyek
+          Kami menyediakan 4 bahasa yang dapat di terjemahkan ke dalam bahasa
+          <br />
+          Indonesia oleh 5 penerjemah kami yang berkualitas untuk setiap proyek
           Anda.
         </p>
         <div class="languages">
@@ -62,22 +64,28 @@
             <div class="col">
               <img src="@/assets/images/jp.svg" alt="bahasa jepang" />
               <p>Japanese</p>
+              <div class="badge unavailable"><p>Full Booked</p></div>
             </div>
-            <img src="@/assets/icons/vv.svg" alt="vice versa" />
+          </div>
+          <div class="language">
             <div class="col">
-              <img src="@/assets/images/indonesia.svg" alt="bahasa indonesia" />
-              <p>Indonesian</p>
+              <img src="@/assets/images/itali.svg" alt="bahasa itali" />
+              <p>Italia</p>
+              <div class="badge unavailable"><p>Full Booked</p></div>
             </div>
           </div>
           <div class="language">
             <div class="col">
               <img src="@/assets/images/uk.svg" alt="bahasa inggris" />
               <p>English</p>
+              <div class="badge available"><p>Available</p></div>
             </div>
-            <img src="@/assets/icons/vv.svg" alt="vice versa" />
+          </div>
+          <div class="language">
             <div class="col">
-              <img src="@/assets/images/indonesia.svg" alt="bahasa indonesia" />
-              <p>Indonesian</p>
+              <img src="@/assets/images/mandarin.svg" alt="bahasa mandarin" />
+              <p>Mandarin</p>
+              <div class="badge available"><p>Available</p></div>
             </div>
           </div>
         </div>
@@ -319,27 +327,32 @@ export default {
         margin-top: 2.5em;
         display: flex;
         flex-direction: row;
-        gap: 32px;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
 
         .language {
-          background-color: $ArtboardSurface;
           display: flex;
-          flex-direction: row;
-          align-items: center;
-          padding: 24px 32px;
-          border-radius: 16px;
-          gap: 24px;
+          width: 50%;
+          padding: 12px;
           transition: 0.6s ease;
-
-          &:hover {
-            box-shadow: -5px 15px 40px 0px rgba(41, 50, 55, 0.05);
-          }
+          max-width: 150px;
 
           .col {
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            border-radius: 16px;
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 12px;
+            padding: 12px;
+            background-color: $ArtboardSurface;
+
+            &:hover {
+              box-shadow: -5px 15px 40px 0px rgba(41, 50, 55, 0.05);
+            }
 
             img {
               width: 56px;
@@ -352,6 +365,36 @@ export default {
               line-height: 150%; /* 19.5px */
               letter-spacing: 0.26px;
               color: $TextSecondary;
+            }
+
+            .badge {
+              width: 100%;
+              padding: 4px 12px;
+
+              border-radius: 6px;
+              p {
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%; /* 19.5px */
+                letter-spacing: 0.26px;
+              }
+            }
+
+            .unavailable {
+              background-color: $ArtboardSurfaceVariant;
+              p {
+                color: $TextSecondary;
+                text-align: center;
+              }
+            }
+
+            .available {
+              background-color: $artboardLightGreen;
+              p {
+                text-align: center;
+                color: $TextGreen;
+              }
             }
           }
         }
@@ -417,7 +460,7 @@ export default {
           width: 80%;
         }
         .languages {
-          flex-direction: column;
+          // flex-direction: column;
         }
       }
     }
