@@ -112,6 +112,10 @@
         }
       }
 
+      .h-grid {
+        display: none;
+      }
+
       .hero-img {
         width: 80%;
       }

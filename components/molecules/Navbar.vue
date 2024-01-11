@@ -278,6 +278,7 @@ const Toggle = async (params) => {
         }
 
         .btn-h {
+          display: none;
           p {
             font-size: 13px;
             font-style: normal;
