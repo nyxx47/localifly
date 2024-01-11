@@ -12,7 +12,7 @@
           content="Hubungi"
           :icon="true"
           type="primary"
-          to="https://api.whatsapp.com/send?phone=6287777446340&text=Hello%20%F0%9F%91%8B"
+          to="https://wa.link/ktpzi4"
           target="_blank"
         />
       </div>
