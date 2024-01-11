@@ -2,6 +2,7 @@
   <div class="wrapper">
     <div class="banner">
       <p>info@localifly.com</p>
+
       <p>
         (+62)877-7744-6340<img
           @click="copy"
@@ -82,9 +83,11 @@
 
 <script setup>
 const isActive = ref(false);
+const toast = useToast();
 
 const copy = async () => {
   try {
+    toast.add({ title: "Copied" });
     await navigator.clipboard.writeText("087777446340");
   } catch ($e) {
     console.log("Cannot copy");
@@ -93,7 +96,6 @@ const copy = async () => {
 
 const Toggle = async (params) => {
   isActive.value = !params;
-  console.log(isActive);
 };
 </script>
 
