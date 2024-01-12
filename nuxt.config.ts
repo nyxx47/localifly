@@ -1,11 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxt/ui", "@nuxtjs/seo", "@nuxt/image"],
+  modules: ["@nuxt/ui", "@nuxtjs/seo", "@nuxt/image", "nuxt-gtag"],
   app: {
     head: {
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
     },
+  },
+  gtag: {
+    id: "G-BQNBWR3N48",
   },
   // production
   // site: {

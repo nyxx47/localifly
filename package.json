@@ -11,7 +11,8 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/seo": "^2.0.0-rc.4",
-    "nuxt": "^3.7.1"
+    "nuxt": "^3.7.1",
+    "nuxt-gtag": "^1.1.2"
   },
   "dependencies": {
     "@nuxt/image": "^1.2.0",
