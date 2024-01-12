@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="banner">
-      <p>info@localifly.com</p>
+      <p class="up">info@localifly.com</p>
 
       <p>
         (+62)877-7744-6340<img
@@ -300,6 +300,10 @@ const Toggle = async (params) => {
       background-color: $artboardBanner;
       padding: 10px 20px;
       justify-content: space-between;
+
+      .up {
+        font-size: 13px !important;
+      }
       p {
         font-size: 12px;
         font-style: normal;
@@ -319,7 +323,7 @@ const Toggle = async (params) => {
       padding-right: 20px;
       .col {
         .logo {
-          width: 100%;
+          width: 100px;
         }
         .menus {
           display: none;
