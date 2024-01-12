@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxt/ui", "@nuxtjs/seo"],
+  modules: ["@nuxt/ui", "@nuxtjs/seo", "@nuxt/image"],
   app: {
     head: {
       charset: "utf-8",
@@ -8,15 +8,15 @@ export default defineNuxtConfig({
     },
   },
   // production
-  site: {
-    url: "https://localifly.com",
-    name: "Localifly",
-    description:
-      "Layanan untuk setiap bisnis, organisasi, atau individu dengan berpengalaman dalam penerjemahan semua jenis dokumen.",
-    defaultLocale: "id", // not needed if you have @nuxtjs/i18n installed
-  },
+  // site: {
+  //   url: "https://localifly.com",
+  //   name: "Localifly",
+  //   description:
+  //     "Layanan untuk setiap bisnis, organisasi, atau individu dengan berpengalaman dalam penerjemahan semua jenis dokumen.",
+  //   defaultLocale: "id", // not needed if you have @nuxtjs/i18n installed
+  // },
   // development
-  // site: { indexable: false },
+  site: { indexable: false },
 
   seo: {
     fallbackTitle: false,
@@ -27,6 +27,9 @@ export default defineNuxtConfig({
     timeline: {
       enabled: true,
     },
+  },
+  image: {
+    // Options
   },
   css: ["@/assets/scss/main.scss"],
   vite: {
