@@ -10,6 +10,9 @@ export default defineNuxtConfig({
   gtag: {
     id: "G-BQNBWR3N48",
   },
+  image: {
+    dir: "assets/images",
+  },
   // production
   // site: {
   //   url: "https://localifly.com",
