@@ -13,7 +13,7 @@
     </div>
     <div class="main">
       <div class="col">
-        <NuxtImg class="logo" src="/logo.svg" placeholder />
+        <img class="logo" src="~/assets/logo.svg" alt="localifly logo" />
         <div class="menus">
           <nuxt-link to="/">Home</nuxt-link>
 

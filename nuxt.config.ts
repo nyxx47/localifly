@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxt/ui", "@nuxtjs/seo", "@nuxt/image", "nuxt-gtag"],
+  modules: ["@nuxt/ui", "@nuxtjs/seo", "nuxt-gtag"],
   app: {
     head: {
       charset: "utf-8",
@@ -9,9 +9,6 @@ export default defineNuxtConfig({
   },
   gtag: {
     id: "G-BQNBWR3N48",
-  },
-  image: {
-    dir: "assets/images",
   },
   // production
   // site: {
@@ -33,9 +30,6 @@ export default defineNuxtConfig({
     timeline: {
       enabled: true,
     },
-  },
-  image: {
-    // Options
   },
   css: ["@/assets/scss/main.scss"],
   vite: {
