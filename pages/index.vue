@@ -67,13 +67,13 @@
               <div class="badge unavailable"><p>Full Booked</p></div>
             </div>
           </div>
-          <div class="language">
+          <!-- <div class="language">
             <div class="col">
               <img src="@/assets/images/itali.svg" alt="bahasa itali" />
               <p>Italia</p>
               <div class="badge unavailable"><p>Full Booked</p></div>
             </div>
-          </div>
+          </div> -->
           <div class="language">
             <div class="col">
               <img src="@/assets/images/mandarin.svg" alt="bahasa mandarin" />
