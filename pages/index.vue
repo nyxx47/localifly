@@ -54,7 +54,7 @@
       <div class="box-wrapper">
         <h2>Bahasa yang tersedia</h2>
         <p>
-          Kami menyediakan 4 bahasa yang dapat di terjemahkan ke dalam bahasa
+          Kami menyediakan 5 bahasa yang dapat di terjemahkan ke dalam bahasa
           <br />
           Indonesia oleh 5 penerjemah kami yang profesional untuk setiap proyek
           Anda.
@@ -76,6 +76,13 @@
           </div>
           <div class="language">
             <div class="col">
+              <img src="@/assets/images/mandarin.svg" alt="bahasa mandarin" />
+              <p>Mandarin</p>
+              <div class="badge unavailable"><p>Full Booked</p></div>
+            </div>
+          </div>
+          <div class="language">
+            <div class="col">
               <img src="@/assets/images/uk.svg" alt="bahasa inggris" />
               <p>English</p>
               <div class="badge available"><p>Available</p></div>
@@ -83,8 +90,8 @@
           </div>
           <div class="language">
             <div class="col">
-              <img src="@/assets/images/mandarin.svg" alt="bahasa mandarin" />
-              <p>Mandarin</p>
+              <img src="@/assets/images/dutch.svg" alt="bahasa belanda" />
+              <p>Belanda</p>
               <div class="badge available"><p>Available</p></div>
             </div>
           </div>
