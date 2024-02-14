@@ -106,10 +106,20 @@
           kami yang memberikan terjemahan akurat 100%, setiap saat.
         </p>
       </div>
-      <div class="lottie-wrapper">
+      <div class="lottie-wrapper" v-if="$device.isDesktop">
         <client-only>
           <Vue3Lottie
             :animationData="LottieDesktop"
+            height="100%"
+            width="100%"
+            :scale="1"
+          />
+        </client-only>
+      </div>
+      <div class="lottie-wrapper" v-else>
+        <client-only>
+          <Vue3Lottie
+            :animationData="LottieMobile"
             height="100%"
             width="100%"
             :scale="1"
@@ -160,6 +170,7 @@
   </div>
 </template>
 <script setup>
+const { isMobile } = useDevice();
 useHead({
   title: "Localifly | Penerjemahan",
   meta: [
@@ -215,11 +226,13 @@ const ToggleFaq = (id) => {
 
 <script>
 import LottieDesktop from "@/assets/lottiefiles/workflow_desktop.json";
+import LottieMobile from "@/assets/lottiefiles/workflow_mobile.json";
 
 export default {
   data() {
     return {
       LottieDesktop: LottieDesktop,
+      LottieMobile: LottieMobile,
     };
   },
 };
