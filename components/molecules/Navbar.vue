@@ -18,12 +18,11 @@
           <nuxt-link to="/">Home</nuxt-link>
 
           <div class="services">
-            Services
+            Layanan
             <img src="~assets/icons/arrow1.svg" alt="arrow-down" />
             <div class="menu-s">
-              <nuxt-link to="/document-translation"
-                >Document Translation</nuxt-link
-              >
+              <nuxt-link to="/terjemahan-dokumen">Terjemahan Dokumen</nuxt-link>
+              <nuxt-link to="/legalisasi">Legalisasi Dokumen</nuxt-link>
               <nuxt-link to="/proofreading">Proofreading</nuxt-link>
             </div>
           </div>
