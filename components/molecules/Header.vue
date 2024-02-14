@@ -8,13 +8,24 @@
           Layanan untuk setiap bisnis, organisasi, atau individu dengan
           berpengalaman dalam penerjemahan semua jenis dokumen.
         </p>
-        <OrganismsButton
+        <UButton
+          label="Hubungi Kami"
+          size="md"
+          to="https://wa.link/ktpzi4"
+          target="_blank"
+        >
+          <template #trailing>
+            <UIcon name="i-heroicons-arrow-up-right-solid" />
+          </template>
+        </UButton>
+
+        <!-- <OrganismsButton
           content="Hubungi"
           :icon="true"
           type="primary"
           to="https://wa.link/ktpzi4"
           target="_blank"
-        />
+        /> -->
       </div>
       <img class="h-grid" src="~/assets/images/grid.svg" alt="grid" />
     </div>
