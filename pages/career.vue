@@ -12,7 +12,7 @@
 
       <UButton
         label="Be part of the team"
-        size="md"
+        size="lg"
         to="https://wa.link/ktpzi4"
         target="_blank"
       >

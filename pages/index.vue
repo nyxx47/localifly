@@ -156,13 +156,16 @@
             tim kami.
           </p>
         </div>
-        <OrganismsButton
-          content="Hubungi"
-          :icon="true"
-          type="primary"
+        <UButton
+          label="Hubungi Kami"
+          size="lg"
           to="https://wa.link/ktpzi4"
           target="_blank"
-        />
+        >
+          <template #trailing>
+            <UIcon name="i-heroicons-arrow-up-right-solid" />
+          </template>
+        </UButton>
       </div>
     </div>
 

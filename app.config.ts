@@ -4,7 +4,7 @@ export default defineAppConfig({
     gray: "slate",
     button: {
       default: {
-        color: "black",
+        color: "violet",
       },
     },
   },

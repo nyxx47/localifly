@@ -10,7 +10,7 @@
         </p>
         <UButton
           label="Hubungi Kami"
-          size="md"
+          size="lg"
           to="https://wa.link/ktpzi4"
           target="_blank"
         >
@@ -63,6 +63,7 @@
       flex-direction: column;
       gap: 24px;
       align-items: center;
+      z-index: 1;
       .badge {
         border-radius: 32px;
         border: 1px solid $ArtboardBorder;
