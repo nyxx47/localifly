@@ -36,20 +36,15 @@
       <div class="col">
         <div class="btn-h">
           <p>info@localifly.com</p>
-          <UButton
-            label="Whatsapp"
-            size="md"
+
+          <Button
             to="https://wa.link/ktpzi4"
             target="_blank"
-            color="white"
+            icon="heroicons:arrow-up-right-20-solid"
+            variant="secondary"
           >
-          </UButton>
-          <!-- <OrganismsButton
-            content="Whatsapp"
-            type="secondary"
-            to="https://wa.link/ktpzi4"
-            target="_blank"
-          /> -->
+            Whatsapp
+          </Button>
         </div>
         <div
           class="m-menu"

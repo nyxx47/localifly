@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <MoleculesHeader />
+    <Header />
     <div class="section-1">
       <div class="col">
         <img
@@ -156,20 +156,18 @@
             tim kami.
           </p>
         </div>
-        <UButton
-          label="Hubungi Kami"
-          size="lg"
+        <Button
           to="https://wa.link/ktpzi4"
           target="_blank"
+          icon="heroicons:arrow-up-right-20-solid"
+          variant="primary"
         >
-          <template #trailing>
-            <UIcon name="i-heroicons-arrow-up-right-solid" />
-          </template>
-        </UButton>
+          Hubungi Kami
+        </Button>
       </div>
     </div>
 
-    <MoleculesFooter />
+    <Footer />
   </div>
 </template>
 <script setup>

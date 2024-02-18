@@ -8,7 +8,7 @@
           Layanan untuk setiap bisnis, organisasi, atau individu dengan
           berpengalaman dalam penerjemahan semua jenis dokumen.
         </p>
-        <UButton
+        <!-- <UButton
           label="Hubungi Kami"
           size="lg"
           to="https://wa.link/ktpzi4"
@@ -17,20 +17,27 @@
           <template #trailing>
             <UIcon name="i-heroicons-arrow-up-right-solid" />
           </template>
-        </UButton>
+        </UButton> -->
 
-        <!-- <OrganismsButton
-          content="Hubungi"
-          :icon="true"
-          type="primary"
+        <Button
           to="https://wa.link/ktpzi4"
           target="_blank"
-        /> -->
+          icon="heroicons:arrow-up-right-20-solid"
+          variant="primary"
+        >
+          Hubungi Kami
+        </Button>
       </div>
       <img class="h-grid" src="~/assets/images/grid.svg" alt="grid" />
     </div>
   </div>
 </template>
+
+<script setup>
+const testClick = () => {
+  alert("Test");
+};
+</script>
 
 <style lang="scss" scoped>
 .wrapper {

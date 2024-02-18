@@ -1,5 +1,5 @@
 <template>
-  <MoleculesNavbar />
+  <Navbar />
 
   <NuxtPage />
   <UNotifications />

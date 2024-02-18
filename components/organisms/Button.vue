@@ -1,50 +1,62 @@
+<!-- https://github.com/nuxt/ui/blob/dev/src/runtime/components/elements/Button.vue -->
 <template>
-  <nuxt-link :to="to" :target="target">
-    <div class="btn" :class="type">
-      <p>
-        {{ content }}
-      </p>
-      <img v-if="icon" src="~/assets/icons/arrowup.svg" alt="arrow up" />
-    </div>
+  <nuxt-link :class="[variantType, btnStyle]" v-bind="{ ...linkProps }">
+    <slot>Button</slot>
+    <UIcon :name="icon" dynamic aria-hidden="true" />
   </nuxt-link>
 </template>
-
+​
 <script setup>
-defineProps(["content", "type", "icon", "to", "target"]);
+const linkProps = defineProps(["icon", "variant"]);
+
+const btnStyle = ref("button");
+
+const variantType = computed(() => {
+  switch (linkProps.variant) {
+    case "primary":
+      return "primary";
+    case "secondary":
+      return "secondary";
+    case "ghost":
+      return "ghost";
+    default:
+      return "primary";
+  }
+});
 </script>
 
 <style lang="scss" scoped>
 a {
   color: unset;
 }
-.btn {
+.button {
   display: flex;
-  padding: 6px 12px;
+  padding: 8px 16px;
   align-items: center;
   border-radius: 8px;
   height: fit-content;
   font-size: 14px;
   cursor: pointer;
-  min-height: 36px;
+  min-height: 40px;
   justify-content: center;
   width: fit-content;
-  img {
-    position: relative;
-    left: 3px;
+  gap: 4px;
+
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 19.5px */
+  letter-spacing: 0.26px;
+
+  .icon {
+    width: 18px !important;
+    height: 18px;
   }
 }
 
 .primary {
   background: $ArtboardBlack;
   transition: 0.3s ease;
-
-  p {
-    font-style: normal;
-    font-weight: 300;
-    line-height: 150%; /* 19.5px */
-    letter-spacing: 0.26px;
-    color: $TextWhite;
-  }
+  color: $TextWhite;
   &:hover {
     box-shadow: 0px 4px 20px 0px rgba(74, 70, 70, 0.25);
   }
@@ -59,9 +71,7 @@ a {
   font-weight: 400;
   line-height: 150%; /* 22.5px */
   letter-spacing: 0.3px;
-
-  p {
-  }
+  color: $TextPrimary;
 }
 
 .tertiary {

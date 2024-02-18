@@ -1,25 +1,24 @@
 <template>
-  <div class="container">
-    <div class="head-wrapper">
-      <div class="wrap">
-        <img src="~/assets/images/avatars.svg" alt="avatars" />
-        <h2>Become a translator</h2>
-        <p>
-          Are you a seasoned translator or a specialist fluent in multiple
-          languages? Join our team and bring your expertise to the table!
-        </p>
+  <div class="wrapper">
+    <div class="head-wrap">
+      <div class="header">
+        <div class="wrap">
+          <img src="~/assets/images/avatars.svg" alt="avatars" />
+          <h2>Become a translator</h2>
+          <p>
+            Are you a seasoned translator or a specialist fluent in multiple
+            languages? Join our team and bring your expertise to the table!
+          </p>
+        </div>
+        <Button
+          to="https://wa.link/ktpzi4"
+          target="_blank"
+          icon="heroicons:arrow-up-right-20-solid"
+          variant="primary"
+        >
+          Be part of the team
+        </Button>
       </div>
-
-      <UButton
-        label="Be part of the team"
-        size="lg"
-        to="https://wa.link/ktpzi4"
-        target="_blank"
-      >
-        <template #trailing>
-          <UIcon name="i-heroicons-arrow-up-right-solid" />
-        </template>
-      </UButton>
     </div>
     <div class="section-1">
       <div class="s-header">
@@ -78,41 +77,50 @@ useHead({
 </script>
 
 <style lang="scss" scoped>
-.container {
-  margin: 0 auto;
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding-top: 8em;
-  .head-wrapper {
-    border-radius: 16px;
-    background-color: $ArtboardSurfaceVariant;
-    display: flex;
-    padding: 56px 0px;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    align-self: stretch;
+  .head-wrap {
+    max-width: 1440px;
     width: 100%;
-
-    .wrap {
+    padding-left: 120px;
+    padding-right: 120px;
+    .header {
+      border-radius: 16px;
+      background-color: $ArtboardSurfaceVariant;
       display: flex;
+      padding: 56px 0px;
       flex-direction: column;
       align-items: center;
-      gap: 12px;
-      h2 {
-        color: $TextPrimary;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 22px;
-        letter-spacing: 2%;
-        text-align: center;
-      }
+      gap: 24px;
+      width: 100%;
 
-      p {
-        color: $TextSecondary;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 150%;
-        letter-spacing: 2%;
-        text-align: center;
+      .wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        h2 {
+          color: $TextPrimary;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 22px;
+          letter-spacing: 2%;
+          text-align: center;
+        }
+
+        p {
+          color: $TextSecondary;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 150%;
+          letter-spacing: 2%;
+          text-align: center;
+        }
       }
     }
   }

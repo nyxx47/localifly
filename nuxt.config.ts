@@ -10,6 +10,16 @@ export default defineNuxtConfig({
   gtag: {
     id: "G-BQNBWR3N48",
   },
+  components: [
+    {
+      path: "~/components/organisms",
+      pathPrefix: false,
+    },
+    {
+      path: "~/components/molecules",
+      pathPrefix: false,
+    },
+  ],
 
   // production
   // site: {
