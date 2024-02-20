@@ -1,7 +1,7 @@
 <!-- https://github.com/nuxt/ui/blob/dev/src/runtime/components/elements/Button.vue -->
 <template>
   <nuxt-link :class="[variantType, btnStyle]" v-bind="{ ...linkProps }">
-    <slot>Button</slot>
+    <slot></slot>
     <UIcon :name="icon" dynamic aria-hidden="true" />
   </nuxt-link>
 </template>
