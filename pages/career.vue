@@ -60,6 +60,44 @@
         </div>
       </div>
     </div>
+    <div class="section-5">
+      <div class="s-header">
+        <h2>FAQ</h2>
+        <p>We answer all your questions and concerns.</p>
+      </div>
+      <div class="faq-wrapper">
+        <div class="faq" v-for="(item, index) in faq" :key="index">
+          <div class="faq-btn" @click="ToggleFaq(item.id)">
+            <h2>{{ item.title }}</h2>
+            <img
+              src="~/assets/icons/chevron-down.svg"
+              :class="{ isRotate: item.isOpen }"
+              alt="chevron-down"
+            />
+          </div>
+          <div class="faq-content" :class="{ isShow: item.isOpen }">
+            <p>{{ item.content }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="box-wrapper">
+        <div class="wrap">
+          <img src="~/assets/images/avatars.svg" alt="avatars" />
+          <h2>Still Have Any Questions?</h2>
+          <p>
+            Can't find the answer you're looking for? Please contact our team.
+          </p>
+        </div>
+        <Button
+          to="https://wa.link/ktpzi4"
+          target="_blank"
+          icon="heroicons:arrow-up-right-20-solid"
+          variant="primary"
+        >
+          Contact Us
+        </Button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -74,9 +112,48 @@ useHead({
     },
   ],
 });
+
+const faq = ref([
+  {
+    id: 0,
+    title: "Do I need specific software to be a translator for Localifly?",
+    content: "No, You can use any software.",
+    isOpen: false,
+  },
+  {
+    id: 1,
+    title: "How are rates set?",
+    content:
+      "You will receive 40% for every single page. For example, the price for Indonesian to English is Rp75,000, and you will get Rp30,000 for every page.",
+    isOpen: false,
+  },
+  {
+    id: 2,
+    title: "How and when do I get paid?",
+    content: "You will get paid one week after the project is done.",
+    isOpen: false,
+  },
+]);
+
+const ToggleFaq = (id) => {
+  for (let i = 0; i < faq.value.length; i++) {
+    const element = faq.value[i];
+    if (element.id == id) {
+      faq.value[id].isOpen = !faq.value[id].isOpen;
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>
+.isShow {
+  display: block !important;
+}
+
+.isRotate {
+  transition: 0.3s ease;
+  transform: rotate(-180deg);
+}
 .wrapper {
   width: 100%;
   display: flex;
@@ -200,16 +277,146 @@ useHead({
       }
     }
   }
+
+  .section-5 {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    justify-content: center;
+    padding-top: 8em;
+    padding-bottom: 8em;
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+    .s-header {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+      h2 {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 0.72px;
+        color: $TextPrimary;
+        width: 50%;
+        text-align: center;
+      }
+
+      p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.26px;
+        color: #708089;
+        width: 70%;
+        text-align: center;
+      }
+    }
+
+    .faq-wrapper {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      .faq {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 12px 16px;
+        border-radius: 6px;
+
+        &:hover {
+          background-color: #fafafa;
+        }
+        .faq-btn {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          cursor: pointer;
+          flex-direction: row;
+          gap: 24px;
+
+          h2 {
+            color: $TextPrimary;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing: 0%;
+            text-align: left;
+          }
+
+          img {
+            transition: 0.3s ease;
+          }
+        }
+        .faq-content {
+          display: none;
+          padding-right: 5em;
+
+          p {
+            color: $TextSecondary;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 0%;
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    .box-wrapper {
+      border-radius: 16px;
+      background-color: $ArtboardSurfaceVariant;
+      display: flex;
+      padding: 56px 0px;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      align-self: stretch;
+      width: 100%;
+
+      .wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        h2 {
+          color: $TextPrimary;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 22px;
+          letter-spacing: 2%;
+          text-align: center;
+        }
+
+        p {
+          color: $TextSecondary;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 150%;
+          letter-spacing: 2%;
+          text-align: center;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
-  .container {
+  .wrapper {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 7em;
-    .head-wrapper {
-      padding-left: 20px;
-      padding-right: 20px;
+    .head-wrap {
+      padding-left: 0px;
+      padding-right: 0px;
     }
 
     .section-1 {
@@ -232,6 +439,30 @@ useHead({
 
       .wrap {
         flex-direction: column;
+      }
+    }
+
+    .section-5 {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 1.3em;
+
+      .faq-wrapper {
+        width: 100%;
+
+        .faq {
+          .faq-btn {
+            h2 {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      .box-wrapper {
+        .wrap {
+          width: 85%;
+        }
       }
     }
   }
