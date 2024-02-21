@@ -2,8 +2,8 @@
   <div class="wrapper">
     <div class="main">
       <div class="menus">
-        <!-- <NuxtLink to="/"> Layanan </NuxtLink> -->
-        <NuxtLink to="/"> Karir </NuxtLink>
+        <NuxtLink to="/"> Home </NuxtLink>
+        <NuxtLink to="/career"> Karir </NuxtLink>
         <NuxtLink to="/"> FAQ </NuxtLink>
         <NuxtLink to="/" class="contact"> Kontak Kami </NuxtLink>
         <NuxtLink to="/"> Privasi </NuxtLink>

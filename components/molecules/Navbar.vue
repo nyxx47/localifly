@@ -18,7 +18,7 @@
           <nuxt-link to="/">Home</nuxt-link>
 
           <div class="services">
-            Layanan
+            <p>Layanan</p>
             <img src="~assets/icons/arrow1.svg" alt="arrow-down" />
             <div class="menu-s">
               <nuxt-link to="/terjemahan-dokumen">Terjemahan Dokumen</nuxt-link>
@@ -153,6 +153,15 @@ const Toggle = async (params) => {
           position: relative;
           display: flex;
           align-items: center;
+
+          p {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 145%;
+            letter-spacing: 0.26px;
+            color: $TextPrimary;
+          }
 
           .menu-s {
             position: absolute;

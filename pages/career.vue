@@ -98,6 +98,7 @@
         </Button>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
@@ -411,15 +412,15 @@ const ToggleFaq = (id) => {
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
   .wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
     padding-top: 7em;
     .head-wrap {
-      padding-left: 0px;
-      padding-right: 0px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
 
     .section-1 {
+      padding-left: 20px;
+      padding-right: 20px;
       padding-top: 6em;
       padding-bottom: 4em;
       height: fit-content;
