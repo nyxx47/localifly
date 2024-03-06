@@ -1,6 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxt/ui", "@nuxtjs/seo", "nuxt-gtag", "@nuxtjs/device"],
+  modules: [
+    "@nuxt/ui",
+    "@nuxtjs/seo",
+    "nuxt-gtag",
+    "@nuxtjs/device",
+    "@nuxtjs/sitemap",
+  ],
   app: {
     head: {
       charset: "utf-8",
