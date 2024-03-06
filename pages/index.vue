@@ -172,13 +172,14 @@
 </template>
 <script setup>
 const { isMobile } = useDevice();
+
 useHead({
-  title: "Localifly | Penerjemahan",
+  title: "Jasa Penerjemah Bahasa Jakarta | Tersumpah Bersertifikat Resmi",
   meta: [
     {
       name: "description",
       content:
-        "Layanan untuk setiap bisnis, organisasi, atau individu dengan berpengalaman dalam penerjemahan semua jenis dokumen.",
+        "Jasa Penerjemah Bahasa Jakarta | Penerjemah tersumpah, legalisasi dokumen, proofreading, bersertifikat resmi Kemenkumham & Kemlu telp 087777446340",
     },
   ],
 });

@@ -1,12 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: [
-    "@nuxt/ui",
-    "@nuxtjs/seo",
-    "nuxt-gtag",
-    "@nuxtjs/device",
-    "@nuxtjs/robots",
-  ],
+  modules: ["@nuxt/ui", "@nuxtjs/seo", "nuxt-gtag", "@nuxtjs/device"],
   app: {
     head: {
       charset: "utf-8",
@@ -15,10 +9,6 @@ export default defineNuxtConfig({
   },
   gtag: {
     id: "G-BQNBWR3N48",
-  },
-  robots: {
-    UserAgent: "*",
-    Disallow: "",
   },
   components: [
     {
