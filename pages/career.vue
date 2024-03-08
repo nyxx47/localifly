@@ -24,10 +24,10 @@
       <div class="s-header">
         <h2>Why working with Localifly?</h2>
         <p>
-          Our translators don’t need to be their own marketers, financial
-          analysts or service agents. Our model ensures that you get jobs
-          regularly wherever you are, so you only have to worry about
-          translating.
+          Translators can focus on what they do best—translating—without
+          worrying about marketing themselves, crunching numbers, or managing
+          customer service. Our model ensures that you get jobs regularly
+          wherever you are, so you only have to worry about translating.
         </p>
       </div>
       <div class="wrap">
