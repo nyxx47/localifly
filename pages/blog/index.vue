@@ -1,0 +1,100 @@
+<template>
+  <div class="wrapper mx-auto">
+    <div class="blog">
+      <div class="header mb-12">
+        <div class="badge">Our Blogs</div>
+        <p class="text-4xl font-bold text-primary mt-6">
+          Resources and insights
+        </p>
+        <p class="text-base mt-2 text-primary">
+          The latest industry news, language, laws, technologies, and resources.
+        </p>
+      </div>
+      <div class="cards grid grid-cols-3 gap-4 mb-24">
+        <nuxt-link
+          class="col-span-3 grow"
+          to="blog/jasa-penerjemah-tersumpah-jakarta-bersertifikat-resmi"
+        >
+          <div
+            class="card card-top"
+            :style="{
+              backgroundImage: 'url(' + image + ')',
+            }"
+          >
+            <div class="preview-content">
+              <p class="text-xl font-bold text-white">
+                Jasa Penerjemah Tersumpah Jakarta, Bersertifikat Resmi <br />
+                Terbaik 2024
+              </p>
+              <p class="text-sm mt-2 text-white">
+                Dalam era globalisasi ini, kebutuhan akan penerjemahan dokumen
+                semakin meningkat. Baik itu...
+              </p>
+            </div>
+          </div>
+        </nuxt-link>
+        <!-- <div class="card grow">02</div>
+        <div class="card grow">03</div>
+        <div class="card grow">03</div> -->
+      </div>
+    </div>
+    <Footer />
+  </div>
+</template>
+
+<script setup>
+const image =
+  "https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+
+useHead({
+  title: "Blog | Resources and insights",
+  meta: [
+    {
+      name: "description",
+      content:
+        "The latest industry news, language, laws, technologies, and resources.",
+    },
+  ],
+});
+</script>
+
+<style lang="scss" scoped>
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .blog {
+    padding-top: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+
+    .header {
+      width: 100%;
+    }
+
+    .cards {
+      width: 100%;
+
+      .card-top {
+        height: 500px;
+      }
+      .card {
+        position: relative;
+        background-size: cover;
+
+        .preview-content {
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          padding: 24px;
+          background-color: rgba($color: #000000, $alpha: 0.1);
+          backdrop-filter: blur(1px);
+        }
+      }
+    }
+  }
+}
+</style>

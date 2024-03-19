@@ -61,18 +61,6 @@ const testClick = () => {
       gap: 24px;
       align-items: center;
       z-index: 1;
-      .badge {
-        border-radius: 32px;
-        border: 1px solid $ArtboardBorder;
-        padding: 6px 12px;
-        width: fit-content;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%; /* 16.5px */
-        letter-spacing: 0.22px;
-        color: $TextPrimary;
-      }
 
       h1 {
         font-size: 48px;

@@ -27,6 +27,7 @@
             </div>
           </div>
           <nuxt-link to="/faq">FAQ</nuxt-link>
+          <nuxt-link to="/blog">Blog</nuxt-link>
           <nuxt-link to="/career" class="n-badge"
             >Become a Translator</nuxt-link
           >
