@@ -3,10 +3,10 @@
     <div class="blog">
       <div class="header mb-12">
         <div class="badge">Our Blogs</div>
-        <p class="text-4xl font-bold text-primary mt-6">
+        <p class="text-4xl font-bold txt-primary mt-6">
           Resources and insights
         </p>
-        <p class="text-base mt-2 text-primary">
+        <p class="text-base mt-2 txt-primary">
           The latest industry news, language, laws, technologies, and resources.
         </p>
       </div>
