@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     },
   },
   gtag: {
-    id: "G-BQNBWR3N48",
+    id: "G-Q7JEGKGMR3",
   },
   components: [
     {
