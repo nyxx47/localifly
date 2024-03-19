@@ -21,7 +21,7 @@
       <h2>Spesialisasi terjemahan bahasa kami</h2>
       <div class="wrap">
         <div class="col">
-          <img src="~/assets/icons/company.svg" alt="perusahaan" />
+          <NuxtImg src="/company.svg" />
           <h5>Perusahaan</h5>
           <p>
             Terjemahan tersumpah akta pendirian, Izin Prinsip, SIUP, TDP, NPWP,
@@ -507,7 +507,7 @@ export default {
         flex-direction: column;
         gap: 16px;
         img {
-          width: fit-content;
+          width: 24px;
           margin-bottom: 0.5em;
         }
 
