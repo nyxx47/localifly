@@ -10,9 +10,9 @@
           The latest industry news, language, laws, technologies, and resources.
         </p>
       </div>
-      <div class="cards grid grid-cols-3 gap-4 mb-24">
+      <div class="cards grid grid-cols-2 gap-4 mb-24">
         <nuxt-link
-          class="col-span-3 grow"
+          class="col-span-2 grow"
           to="blog/jasa-penerjemah-tersumpah-jakarta-bersertifikat-resmi"
         >
           <div
@@ -21,7 +21,7 @@
               backgroundImage: 'url(' + image + ')',
             }"
           >
-            <div class="preview-content">
+            <div class="preview-content p-6">
               <p class="text-xl font-bold text-white">
                 Jasa Penerjemah Tersumpah Jakarta, Bersertifikat Resmi <br />
                 Terbaik 2024
@@ -33,9 +33,22 @@
             </div>
           </div>
         </nuxt-link>
-        <!-- <div class="card grow">02</div>
-        <div class="card grow">03</div>
-        <div class="card grow">03</div> -->
+        <nuxt-link to="blog/jasa-penerjemah-bahasa-jakarta-timur" class="grow">
+          <div
+            class="card"
+            :style="{
+              backgroundImage: 'url(' + image2 + ')',
+            }"
+          >
+            <div class="preview-content p-4">
+              <p class="text-base font text-white">
+                Jasa Penerjemah Bahasa Jakarta Timur, Pilih Localifly!
+              </p>
+            </div>
+          </div>
+        </nuxt-link>
+        <div class="card grow"></div>
+        <!-- <div class="card grow">03</div> -->
       </div>
     </div>
     <Footer />
@@ -44,8 +57,10 @@
 
 <script setup>
 const image =
-  "https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+  "https://res.cloudinary.com/ahroidlife/image/upload/v1710988036/Localifly/office1_e8syur.jpg";
 
+const image2 =
+  "https://res.cloudinary.com/ahroidlife/image/upload/v1710989521/Localifly/language_yp02sc.jpg";
 useHead({
   title: "Blog | Resources and insights",
   meta: [
@@ -82,6 +97,7 @@ useHead({
         height: 500px;
       }
       .card {
+        min-height: 250px;
         position: relative;
         background-size: cover;
 
@@ -89,7 +105,6 @@ useHead({
           width: 100%;
           position: absolute;
           bottom: 0;
-          padding: 24px;
           background-color: rgba($color: #000000, $alpha: 0.1);
           backdrop-filter: blur(1px);
         }

@@ -6,7 +6,6 @@ export default defineNuxtConfig({
     "nuxt-gtag",
     "@nuxtjs/device",
     "@nuxtjs/sitemap",
-    "nuxt-security",
     "@nuxt/image",
   ],
   app: {
