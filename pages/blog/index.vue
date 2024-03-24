@@ -67,7 +67,20 @@
             </div>
           </div>
         </nuxt-link>
-        <!-- <div class="card grow">03</div> -->
+        <nuxt-link to="blog/jasa-penerjemah-tersumpah-di-jakarta" class="grow">
+          <div
+            class="card"
+            :style="{
+              backgroundImage: 'url(' + image4 + ')',
+            }"
+          >
+            <div class="preview-content p-4">
+              <p class="text-base font text-white">
+                Jasa Penerjemah Jakarta Timur
+              </p>
+            </div>
+          </div>
+        </nuxt-link>
       </div>
     </div>
     <Footer />
@@ -83,6 +96,8 @@ const image2 =
 
 const image3 =
   "https://res.cloudinary.com/ahroidlife/image/upload/v1711075650/Localifly/office2_bipntt.jpg";
+const image4 =
+  "https://res.cloudinary.com/ahroidlife/image/upload/v1711296717/Localifly/office5_djdn9d.jpg";
 useHead({
   title: "Blog | Resources and insights",
   meta: [

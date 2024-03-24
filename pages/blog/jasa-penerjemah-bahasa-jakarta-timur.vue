@@ -2,7 +2,9 @@
   <div class="wrapper mx-auto">
     <div class="blog px-5 mx:px-5 lg:px-5 xl:px-0 2xl:px-0">
       <div class="header mb-12">
-        <div class="badge">Resources and insights</div>
+        <nuxt-link to="/blog"
+          ><div class="badge">Resources and insights</div></nuxt-link
+        >
         <p class="text-4xl font-bold txt-primary mt-6 mb-4 leading-snug">
           Jasa Penerjemah Bahasa Jakarta Timur, Pilih Localifly!
         </p>
