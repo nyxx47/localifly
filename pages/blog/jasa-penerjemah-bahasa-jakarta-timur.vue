@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper mx-auto">
-    <div class="blog">
+    <div class="blog px-5 mx:px-5 lg:px-5 xl:px-0 2xl:px-0">
       <div class="header mb-12">
         <div class="badge">Resources and insights</div>
         <p class="text-4xl font-bold txt-primary mt-6 mb-4 leading-snug">
@@ -166,11 +166,12 @@ useHead({
   align-items: center;
 
   .blog {
+    width: 100%;
     padding-top: 10em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 800px;
+    max-width: 800px;
 
     .header {
       width: 100%;
@@ -182,6 +183,9 @@ useHead({
       .thumbnail {
         height: 500px;
         background-size: cover;
+        @media only screen and (min-width: 320px) and (max-width: 600px) {
+          height: 300px;
+        }
       }
     }
   }

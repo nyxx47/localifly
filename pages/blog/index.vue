@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper mx-auto">
-    <div class="blog">
+    <div class="blog px-5 mx:px-5 lg:px-5 xl:px-0 2xl:px-0">
       <div class="header mb-12">
         <div class="badge">Our Blogs</div>
         <p class="text-4xl font-bold txt-primary mt-6">
@@ -10,9 +10,11 @@
           The latest industry news, language, laws, technologies, and resources.
         </p>
       </div>
-      <div class="cards grid grid-cols-2 gap-4 mb-24">
+      <div
+        class="cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-2 gap-4 mb-24"
+      >
         <nuxt-link
-          class="col-span-2 grow"
+          class="sm:col-span-2 md:sm:col-span-2 xl:sm:col-span-2 2xl:sm:col-span-2 grow"
           to="blog/jasa-penerjemah-tersumpah-jakarta-bersertifikat-resmi"
         >
           <div
@@ -22,11 +24,15 @@
             }"
           >
             <div class="preview-content p-6">
-              <p class="text-xl font-bold text-white">
+              <p
+                class="text-base font sm:text-xl md:text-xl xl:text-xl 2xl:text-xl sm:font-bold md:font-bold xl:font-bold 2xl:font-bold text-white"
+              >
                 Jasa Penerjemah Tersumpah Jakarta, Bersertifikat Resmi <br />
                 Terbaik 2024
               </p>
-              <p class="text-sm mt-2 text-white">
+              <p
+                class="text-sm mt-2 text-white hidden sm:inline md:inline xl:inline 2xl:inline"
+              >
                 Dalam era globalisasi ini, kebutuhan akan penerjemahan dokumen
                 semakin meningkat. Baik itu...
               </p>
@@ -100,7 +106,8 @@ useHead({
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
 
     .header {
       width: 100%;
@@ -111,6 +118,9 @@ useHead({
 
       .card-top {
         height: 500px;
+        @media only screen and (min-width: 320px) and (max-width: 600px) {
+          height: 250px;
+        }
       }
       .card {
         min-height: 250px;
