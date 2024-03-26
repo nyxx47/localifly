@@ -18,6 +18,7 @@
           to="blog/jasa-penerjemah-tersumpah-jakarta-bersertifikat-resmi"
         >
           <NuxtImg
+            provider="cloudinary"
             :src="image"
             class="w-full card card-top object-cover h-500 thumbnail"
           />
@@ -87,18 +88,17 @@
 </template>
 
 <script setup>
-const image =
-  "https://res.cloudinary.com/ahroidlife/image/upload/v1710988036/Localifly/office1_e8syur.jpg";
+const image = "/v1710988036/localifly/office1_e8syur.jpg";
 
 const image2 =
-  "https://res.cloudinary.com/ahroidlife/image/upload/v1710989521/Localifly/language_yp02sc.jpg";
+  "https://res.cloudinary.com/localifly/image/upload/v1710989521/Localifly/language_yp02sc.jpg";
 
 const image3 =
-  "https://res.cloudinary.com/ahroidlife/image/upload/v1711075650/Localifly/office2_bipntt.jpg";
+  "https://res.cloudinary.com/localifly/image/upload/v1711075650/Localifly/office2_bipntt.jpg";
 const image4 =
-  "https://res.cloudinary.com/ahroidlife/image/upload/v1711296717/Localifly/office5_djdn9d.jpg";
+  "https://res.cloudinary.com/localifly/image/upload/v1711296717/Localifly/office5_djdn9d.jpg";
 const image5 =
-  "https://res.cloudinary.com/ahroidlife/image/upload/v1711474675/Localifly/scc_r9uaab.jpg";
+  "https://res.cloudinary.com/localifly/image/upload/v1711474675/Localifly/scc_r9uaab.jpg";
 
 useHead({
   title: "Blog | Resources and insights",

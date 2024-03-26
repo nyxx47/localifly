@@ -56,4 +56,9 @@ export default defineNuxtConfig({
       },
     },
   },
+  image: {
+    cloudinary: {
+      baseURL: "https://res.cloudinary.com/localifly/image/upload/",
+    },
+  },
 });
