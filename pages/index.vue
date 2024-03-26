@@ -3,9 +3,10 @@
     <Header />
     <div class="section-1">
       <div class="col">
-        <img
-          src="~/assets/images/illustration-1.svg"
-          alt="transiago illustration"
+        <NuxtImg
+          class="w-10/12"
+          src="/images/illustration-1.png"
+          alt="localifly illustration"
         />
       </div>
       <div class="col">

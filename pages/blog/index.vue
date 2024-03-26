@@ -14,71 +14,70 @@
         class="cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-2 gap-4 mb-24"
       >
         <nuxt-link
-          class="sm:col-span-2 md:sm:col-span-2 xl:sm:col-span-2 2xl:sm:col-span-2 grow"
+          class="relative sm:col-span-2 md:sm:col-span-2 xl:sm:col-span-2 2xl:sm:col-span-2 grow"
           to="blog/jasa-penerjemah-tersumpah-jakarta-bersertifikat-resmi"
         >
-          <div
-            class="card card-top"
-            :style="{
-              backgroundImage: 'url(' + image + ')',
-            }"
-          >
-            <div class="preview-content p-6">
-              <p
-                class="text-base font sm:text-xl md:text-xl xl:text-xl 2xl:text-xl sm:font-bold md:font-bold xl:font-bold 2xl:font-bold text-white"
-              >
-                Jasa Penerjemah Tersumpah Jakarta, Bersertifikat Resmi <br />
-                Terbaik 2024
-              </p>
-              <p
-                class="text-sm mt-2 text-white hidden sm:inline md:inline xl:inline 2xl:inline"
-              >
-                Dalam era globalisasi ini, kebutuhan akan penerjemahan dokumen
-                semakin meningkat. Baik itu...
-              </p>
-            </div>
+          <NuxtImg
+            :src="image"
+            class="w-full card card-top object-cover h-500 thumbnail"
+          />
+          <div class="absolute bottom-0 preview-content p-6">
+            <p
+              class="text-base font sm:text-xl md:text-xl xl:text-xl 2xl:text-xl sm:font-bold md:font-bold xl:font-bold 2xl:font-bold text-white"
+            >
+              Jasa Penerjemah Tersumpah Jakarta, Bersertifikat Resmi <br />
+              Terbaik 2024
+            </p>
+            <p
+              class="text-sm mt-2 text-white hidden sm:inline md:inline xl:inline 2xl:inline"
+            >
+              Dalam era globalisasi ini, kebutuhan akan penerjemahan dokumen
+              semakin meningkat. Baik itu...
+            </p>
           </div>
         </nuxt-link>
-        <nuxt-link to="blog/jasa-penerjemah-bahasa-jakarta-timur" class="grow">
-          <div
-            class="card"
-            :style="{
-              backgroundImage: 'url(' + image2 + ')',
-            }"
-          >
-            <div class="preview-content p-4">
-              <p class="text-base font text-white">
-                Jasa Penerjemah Bahasa Jakarta Timur, Pilih Localifly!
-              </p>
-            </div>
+        <nuxt-link
+          to="blog/jasa-penerjemah-bahasa-jakarta-timur"
+          class="relative grow"
+        >
+          <NuxtImg :src="image2" class="w-full card object-cover thumbnail" />
+          <div class="absolute bottom-0 preview-content p-4">
+            <p class="text-base font text-white">
+              Jasa Penerjemah Bahasa Jakarta Timur, Pilih Localifly!
+            </p>
           </div>
         </nuxt-link>
-        <nuxt-link to="blog/jasa-penerjemah-jakarta-timur" class="grow">
-          <div
-            class="card"
-            :style="{
-              backgroundImage: 'url(' + image3 + ')',
-            }"
-          >
-            <div class="preview-content p-4">
-              <p class="text-base font text-white">
-                Jasa Penerjemah Jakarta Timur
-              </p>
-            </div>
+        <nuxt-link
+          to="blog/jasa-penerjemah-jakarta-timur"
+          class="relative grow"
+        >
+          <NuxtImg :src="image3" class="w-full card object-cover thumbnail" />
+          <div class="absolute bottom-0 preview-content p-4">
+            <p class="text-base font text-white">
+              Jasa Penerjemah Jakarta Timur
+            </p>
           </div>
         </nuxt-link>
-        <nuxt-link to="blog/jasa-penerjemah-tersumpah-di-jakarta" class="grow">
-          <div
-            class="card"
-            :style="{
-              backgroundImage: 'url(' + image4 + ')',
-            }"
-          >
-            <div class="preview-content p-4">
-              <p class="text-base font text-white">
-                Jasa Penerjemah Jakarta Timur
-              </p>
-            </div>
+        <nuxt-link
+          to="blog/jasa-penerjemah-tersumpah-di-jakarta"
+          class="relative grow"
+        >
+          <NuxtImg :src="image4" class="w-full card object-cover thumbnail" />
+          <div class="absolute bottom-0 preview-content p-4">
+            <p class="text-base font text-white">
+              Jasa Penerjemah Tersumpah di Jakarta Timur
+            </p>
+          </div>
+        </nuxt-link>
+        <nuxt-link
+          to="blog/jasa-penerjemah-bahasa-jakarta-terpercaya"
+          class="relative grow"
+        >
+          <NuxtImg :src="image5" class="w-full card object-cover thumbnail" />
+          <div class="absolute bottom-0 preview-content p-4">
+            <p class="text-base font text-white">
+              Jasa Penerjemah Bahasa Jakarta Terpercaya
+            </p>
           </div>
         </nuxt-link>
       </div>
@@ -98,6 +97,9 @@ const image3 =
   "https://res.cloudinary.com/ahroidlife/image/upload/v1711075650/Localifly/office2_bipntt.jpg";
 const image4 =
   "https://res.cloudinary.com/ahroidlife/image/upload/v1711296717/Localifly/office5_djdn9d.jpg";
+const image5 =
+  "https://res.cloudinary.com/ahroidlife/image/upload/v1711474675/Localifly/scc_r9uaab.jpg";
+
 useHead({
   title: "Blog | Resources and insights",
   meta: [
@@ -141,14 +143,13 @@ useHead({
         min-height: 250px;
         position: relative;
         background-size: cover;
-
-        .preview-content {
-          width: 100%;
-          position: absolute;
-          bottom: 0;
-          background-color: rgba($color: #000000, $alpha: 0.1);
-          backdrop-filter: blur(1px);
-        }
+      }
+      .preview-content {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background-color: rgba($color: #000000, $alpha: 0.1);
+        backdrop-filter: blur(1px);
       }
     }
   }

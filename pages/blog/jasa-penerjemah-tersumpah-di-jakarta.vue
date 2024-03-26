@@ -14,12 +14,13 @@
         </p>
       </div>
       <div class="content">
-        <div
+        <!-- <div
           class="thumbnail"
           :style="{
             backgroundImage: 'url(' + image + ')',
           }"
-        ></div>
+        ></div> -->
+        <NuxtImg :src="image" class="w-full object-cover h-500 thumbnail" />
         <div class="blocks mt-4 mb-56">
           <p class="text-base mt-4 txt-primary">
             Localifly adalah penyedia jasa penerjemah tersumpah yang telah
