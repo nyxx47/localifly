@@ -41,7 +41,11 @@
           to="blog/jasa-penerjemah-bahasa-jakarta-timur"
           class="relative grow"
         >
-          <NuxtImg :src="image2" class="w-full card object-cover thumbnail" />
+          <NuxtImg
+            provider="cloudinary"
+            :src="image2"
+            class="w-full card object-cover thumbnail"
+          />
           <div class="absolute bottom-0 preview-content p-4">
             <p class="text-base font text-white">
               Jasa Penerjemah Bahasa Jakarta Timur, Pilih Localifly!
@@ -52,7 +56,11 @@
           to="blog/jasa-penerjemah-jakarta-timur"
           class="relative grow"
         >
-          <NuxtImg :src="image3" class="w-full card object-cover thumbnail" />
+          <NuxtImg
+            provider="cloudinary"
+            :src="image3"
+            class="w-full card object-cover thumbnail"
+          />
           <div class="absolute bottom-0 preview-content p-4">
             <p class="text-base font text-white">
               Jasa Penerjemah Jakarta Timur
@@ -63,7 +71,11 @@
           to="blog/jasa-penerjemah-tersumpah-di-jakarta"
           class="relative grow"
         >
-          <NuxtImg :src="image4" class="w-full card object-cover thumbnail" />
+          <NuxtImg
+            provider="cloudinary"
+            :src="image4"
+            class="w-full card object-cover thumbnail"
+          />
           <div class="absolute bottom-0 preview-content p-4">
             <p class="text-base font text-white">
               Jasa Penerjemah Tersumpah di Jakarta Timur
@@ -74,7 +86,11 @@
           to="blog/jasa-penerjemah-bahasa-jakarta-terpercaya"
           class="relative grow"
         >
-          <NuxtImg :src="image5" class="w-full card object-cover thumbnail" />
+          <NuxtImg
+            provider="cloudinary"
+            :src="image5"
+            class="w-full card object-cover thumbnail"
+          />
           <div class="absolute bottom-0 preview-content p-4">
             <p class="text-base font text-white">
               Jasa Penerjemah Bahasa Jakarta Terpercaya
@@ -90,15 +106,11 @@
 <script setup>
 const image = "/v1710988036/localifly/office1_e8syur.jpg";
 
-const image2 =
-  "https://res.cloudinary.com/localifly/image/upload/v1710989521/Localifly/language_yp02sc.jpg";
+const image2 = "/v1710989521/localifly/language_yp02sc.jpg";
 
-const image3 =
-  "https://res.cloudinary.com/localifly/image/upload/v1711075650/Localifly/office2_bipntt.jpg";
-const image4 =
-  "https://res.cloudinary.com/localifly/image/upload/v1711296717/Localifly/office5_djdn9d.jpg";
-const image5 =
-  "https://res.cloudinary.com/localifly/image/upload/v1711474675/Localifly/scc_r9uaab.jpg";
+const image3 = "/v1711075650/localifly/office2_bipntt.jpg";
+const image4 = "/v1711296717/localifly/office5_djdn9d.jpg";
+const image5 = "/v1711474675/localifly/scc_r9uaab.jpg";
 
 useHead({
   title: "Blog | Resources and insights",

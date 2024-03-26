@@ -14,13 +14,11 @@
         </p>
       </div>
       <div class="content">
-        <!-- <div
-          class="thumbnail"
-          :style="{
-            backgroundImage: 'url(' + image + ')',
-          }"
-        ></div> -->
-        <NuxtImg :src="image" class="w-full object-cover h-500 thumbnail" />
+        <NuxtImg
+          provider="cloudinary"
+          :src="image"
+          class="w-full object-cover h-500 thumbnail"
+        />
         <div class="blocks mt-4 mb-56">
           <p class="text-base mt-4 txt-primary">
             <strong>Jasa Penerjemah Bahasa Jakarta Timur</strong> – Era
@@ -142,8 +140,7 @@
 </template>
 
 <script setup>
-const image =
-  "https://res.cloudinary.com/ahroidlife/image/upload/v1710989521/Localifly/language_yp02sc.jpg";
+const image = "/v1710989521/Localifly/language_yp02sc.jpg";
 
 useHead({
   title: "Jasa Penerjemah Bahasa Jakarta Timur, Pilih Localifly!",

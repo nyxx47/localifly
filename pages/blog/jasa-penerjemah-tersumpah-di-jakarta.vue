@@ -14,13 +14,11 @@
         </p>
       </div>
       <div class="content">
-        <!-- <div
-          class="thumbnail"
-          :style="{
-            backgroundImage: 'url(' + image + ')',
-          }"
-        ></div> -->
-        <NuxtImg :src="image" class="w-full object-cover h-500 thumbnail" />
+        <NuxtImg
+          provider="cloudinary"
+          :src="image"
+          class="w-full object-cover h-500 thumbnail"
+        />
         <div class="blocks mt-4 mb-56">
           <p class="text-base mt-4 txt-primary">
             Localifly adalah penyedia jasa penerjemah tersumpah yang telah
@@ -330,8 +328,7 @@
 </template>
 
 <script setup>
-const image =
-  "https://res.cloudinary.com/ahroidlife/image/upload/v1711296717/Localifly/office5_djdn9d.jpg";
+const image = "/v1711296717/Localifly/office5_djdn9d.jpg";
 
 useHead({
   title:
