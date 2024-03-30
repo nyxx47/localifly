@@ -97,6 +97,21 @@
             </p>
           </div>
         </nuxt-link>
+        <nuxt-link
+          to="blog/jasa-penerjemah-untuk-bisnis-di-jakarta"
+          class="relative grow"
+        >
+          <NuxtImg
+            provider="cloudinary"
+            :src="image6"
+            class="w-full card object-cover thumbnail"
+          />
+          <div class="absolute bottom-0 preview-content p-4">
+            <p class="text-base font text-white">
+              Efektivitas Menggunakan Jasa Penerjemah untuk Bisnis di Jakarta
+            </p>
+          </div>
+        </nuxt-link>
       </div>
     </div>
     <Footer />
@@ -111,6 +126,8 @@ const image2 = "/v1710989521/localifly/language_yp02sc.jpg";
 const image3 = "/v1711075650/localifly/office2_bipntt.jpg";
 const image4 = "/v1711296717/localifly/office5_djdn9d.jpg";
 const image5 = "/v1711474675/localifly/scc_r9uaab.jpg";
+const image6 =
+  "/v1711813012/Localifly/google-deepmind-_HnJfS6WhA8-unsplash_qpqqob.jpg";
 
 useHead({
   title: "Blog | Resources and insights",
