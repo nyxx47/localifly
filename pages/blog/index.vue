@@ -127,6 +127,21 @@
             </p>
           </div>
         </nuxt-link>
+        <nuxt-link
+          to="blog/jasa-penerjemah-ijazah-jakarta"
+          class="relative grow"
+        >
+          <NuxtImg
+            provider="cloudinary"
+            :src="image8"
+            class="w-full card object-cover thumbnail"
+          />
+          <div class="absolute bottom-0 preview-content p-4">
+            <p class="text-base font text-white">
+              Jasa Penerjemah Ijazah Jakarta, Percayakan Pada Localifly!
+            </p>
+          </div>
+        </nuxt-link>
       </div>
     </div>
     <Footer />
@@ -144,6 +159,8 @@ const image5 = "/v1711474675/localifly/scc_r9uaab.jpg";
 const image6 =
   "/v1711813012/Localifly/google-deepmind-_HnJfS6WhA8-unsplash_qpqqob.jpg";
 const image7 = "/v1713764940/Localifly/microsoft-365_bvmtd1.jpg";
+const image8 =
+  "/v1714487986/Localifly/bench-accounting-C3V88BOoRoM-unsplash_zebgur.jpg";
 
 useHead({
   title: "Blog | Resources and insights",
