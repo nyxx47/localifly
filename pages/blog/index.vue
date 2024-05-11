@@ -142,6 +142,21 @@
             </p>
           </div>
         </nuxt-link>
+        <nuxt-link
+          to="blog/jasa-penerjemah-dokumen-medis-jakarta"
+          class="relative grow"
+        >
+          <NuxtImg
+            provider="cloudinary"
+            :src="image9"
+            class="w-full card object-cover thumbnail"
+          />
+          <div class="absolute bottom-0 preview-content p-4">
+            <p class="text-base font text-white">
+              Jasa Penerjemah Dokumen Medis Jakarta, Privasi Anda Aman Terjaga!
+            </p>
+          </div>
+        </nuxt-link>
       </div>
     </div>
     <Footer />
@@ -161,6 +176,8 @@ const image6 =
 const image7 = "/v1713764940/Localifly/microsoft-365_bvmtd1.jpg";
 const image8 =
   "/v1714487986/Localifly/bench-accounting-C3V88BOoRoM-unsplash_zebgur.jpg";
+const image9 =
+  "v1715386831/Localifly/hush-naidoo-jade-photography-yo01Z-9HQAw-unsplash_jwpea9.jpg";
 
 useHead({
   title: "Blog | Resources and insights",
