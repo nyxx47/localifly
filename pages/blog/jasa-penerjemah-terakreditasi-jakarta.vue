@@ -235,17 +235,16 @@ const image =
   "/v1715388015/Localifly/bench-accounting-nfTA8pdaq9A-unsplash_jq7b6w.jpg";
 
 useHead({
-  title:
-    "Jasa Penerjemah Terakreditasi Jakarta, Tersedia 5 Bahasa untuk Proyek Anda!",
+  title: "Jasa Penerjemah Akta Pendirian Jakarta Professional",
   meta: [
     {
       name: "description",
       content:
-        "Jasa Penerjemah Terakreditasi Jakarta untuk berbagai dokumen pendidikan, medis, ekonomi dll | Tersedia dalam 5 bahasa Hubungi 0877-7744-6340",
+        "Localify adalah Jasa penerjemah akta profesional yang telah berpengalaman dalam penerjemahan semua jenis dokumen Hubungi 087777446340",
     },
     {
       name: "keywords",
-      content: "Jasa penerjemah terakreditasi Jakarta",
+      content: "Jasa Penerjemah Akta Pendirian Jakarta",
     },
   ],
 });

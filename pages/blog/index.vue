@@ -173,6 +173,21 @@
             </p>
           </div>
         </nuxt-link>
+        <nuxt-link
+          to="blog/jasa-penerjemah-akta-pendirian-jakarta"
+          class="relative grow"
+        >
+          <NuxtImg
+            provider="cloudinary"
+            :src="image11"
+            class="w-full card object-cover thumbnail"
+          />
+          <div class="absolute bottom-0 preview-content p-4">
+            <p class="text-base font text-white">
+              Jasa Penerjemah Akta Pendirian Jakarta Professional
+            </p>
+          </div>
+        </nuxt-link>
       </div>
     </div>
     <Footer />
@@ -196,6 +211,8 @@ const image9 =
   "v1715386831/Localifly/hush-naidoo-jade-photography-yo01Z-9HQAw-unsplash_jwpea9.jpg";
 const image10 =
   "/v1715388015/Localifly/bench-accounting-nfTA8pdaq9A-unsplash_jq7b6w.jpg";
+const image11 =
+  "/v1715398526/Localifly/gabrielle-henderson-HJckKnwCXxQ-unsplash_x9xydm.jpg";
 
 useHead({
   title: "Blog | Resources and insights",
