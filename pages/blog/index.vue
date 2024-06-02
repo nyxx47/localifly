@@ -115,6 +115,14 @@
             </p>
           </div>
         </nuxt-link>
+        <nuxt-link to="blog/jasa-proofreading-dokumen-jakarta" class="relative grow">
+          <NuxtImg provider="cloudinary" :src="image13" class="w-full card object-cover thumbnail" />
+          <div class="absolute bottom-0 preview-content p-4">
+            <p class="text-base font text-white">
+              Jasa Proofreading Dokumen Jakarta Profesional Lengkap dengan Cek Grammar
+            </p>
+          </div>
+        </nuxt-link>
       </div>
     </div>
     <Footer />
@@ -140,9 +148,9 @@ const image10 =
   "/v1715388015/Localifly/bench-accounting-nfTA8pdaq9A-unsplash_jq7b6w.jpg";
 const image11 =
   "/v1715398526/Localifly/gabrielle-henderson-HJckKnwCXxQ-unsplash_x9xydm.jpg";
-
 const image12 =
   "/v1717338072/Localifly/alvaro-serrano-hjwKMkehBco-unsplash_a06kxf.jpg";
+const image13 = "/v1717339093/Localifly/pexels-vlada-karpovich-4050315_ajyrbv.jpg";
 
 useHead({
   title: "Blog | Resources and insights",
