@@ -4,7 +4,7 @@
       <div class="menus">
         <NuxtLink to="/"> Home </NuxtLink>
         <NuxtLink to="/career"> Karir </NuxtLink>
-        <NuxtLink to="/"> FAQ </NuxtLink>
+        <NuxtLink to="/blog"> Blog </NuxtLink>
         <NuxtLink to="/" class="contact"> Kontak Kami </NuxtLink>
         <NuxtLink to="/"> Privasi </NuxtLink>
       </div>
@@ -37,12 +37,14 @@
       display: flex;
       gap: 32px;
       flex-wrap: wrap;
+
       a {
         color: $TextPrimary;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        line-height: 150%; /* 24px */
+        line-height: 150%;
+        /* 24px */
       }
     }
 
@@ -57,7 +59,8 @@
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
-      line-height: 150%; /* 24px */
+      line-height: 150%;
+      /* 24px */
     }
   }
 }
@@ -66,10 +69,12 @@
   .wrapper {
     padding-top: 3em;
     padding-bottom: 3em;
+
     .main {
       width: 100%;
       padding-left: 20px;
       padding-right: 20px;
+
       .menus {
         justify-content: center;
 
