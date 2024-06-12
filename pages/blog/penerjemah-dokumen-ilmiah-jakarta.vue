@@ -250,19 +250,19 @@
 </template>
 
 <script setup>
-const image = "/v1717944088/Localifly/2299_hwnvqx.jpg";
+const image = "/v1718153318/Localifly/127905_tmniro.jpg";
 
 useHead({
-  title: "Jasa Proofreading Cepat Jakarta, Perbaiki Tulisan Skripsi Anda!",
+  title: "Penerjemah Dokumen Ilmiah Jakarta Terpercaya!",
   meta: [
     {
       name: "description",
       content:
-        "Jasa proofreading cepat Jakarta | Serahkan skripsi dan dokumen penting Anda kepada kami untuk pengecekan teks profesional | Hubungi 087777446340",
+        "Jasa penerjemah dokumen ilmiah Jakarta | Localifly adalah layanan penerjemahan dokumen tersumpah, hingga lima bahasa yaitu Jepang, Mandarin, Inggris, Belanda dan Indonesia | Hubungi 087777446340",
     },
     {
       name: "keywords",
-      content: "Jasa Proofreading Cepat Jakarta",
+      content: "Penerjemah Dokumen Ilmiah Jakarta",
     },
   ],
 });
