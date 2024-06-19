@@ -1,19 +1,21 @@
 <template>
   <div class="wrapper">
-    <div class="banner">
+    <!-- <div class="banner">
       <p class="up">info@localifly.com</p>
 
       <p>
-        (+62)877-7744-6340<img
+        0877-7744-6340<img
           @click="copy"
           src="~/assets/icons/copy.svg"
           alt="svg"
         />
       </p>
-    </div>
+    </div> -->
     <div class="main">
       <div class="col">
-        <img class="logo" src="~/assets/logo.svg" alt="localifly logo" />
+        <nuxt-link to="/">
+          <img class="logo" src="~/assets/logo.svg" alt="localifly logo" />
+        </nuxt-link>
         <div class="menus">
           <nuxt-link to="/">Home</nuxt-link>
 
@@ -81,12 +83,77 @@
         </div>
       </div>
     </div>
+    <div class="sidebar" :class="[isActive ? 'activeSidebar' : '']">
+      <UVerticalNavigation
+        :links="links"
+        :ui="{
+          wrapper: 'border-s border-gray-200 dark:border-gray-800 space-y-2',
+          base: 'group block border-s -ms-px leading-6 before:hidden',
+          padding: 'p-0 ps-4',
+          rounded: '',
+          font: '',
+          ring: '',
+          active:
+            'text-primary-500 dark:text-primary-400 border-current font-semibold',
+          inactive:
+            'border-transparent hover:border-gray-400 dark:hover:border-gray-500 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300',
+        }"
+      />
+
+      <UButton
+        label="Hubungi Kami"
+        color="gray"
+        to="https://wa.link/ktpzi4"
+        target="_blank"
+        block
+        class="justify-between"
+      >
+        <template #trailing>
+          <UIcon name="i-heroicons-arrow-right-20-solid" class="w-5 h-5" />
+        </template>
+      </UButton>
+    </div>
   </div>
 </template>
 
 <script setup>
 const isActive = ref(false);
 const toast = useToast();
+const click = () => {
+  Toggle(isActive);
+};
+const links = [
+  {
+    label: "Home",
+    to: "/",
+    click,
+  },
+  {
+    label: "Terjemahan Dokumen",
+    to: "/jasa-penerjemah-tersumpah",
+    click,
+  },
+  {
+    label: "Legalisasi Dokumen",
+    to: "/jasa-legalisasi-dokumen",
+    click,
+  },
+  {
+    label: "Proofreading",
+    to: "/jasa-proofreading",
+    click,
+  },
+  {
+    label: "Karir",
+    to: "/career",
+    click,
+  },
+  {
+    label: "Blog",
+    to: "/blog",
+    click,
+  },
+];
 
 const copy = async () => {
   try {
@@ -129,7 +196,7 @@ const Toggle = async (params) => {
       gap: 56px;
 
       .logo {
-        width: 100px;
+        width: 50px;
       }
 
       .btn-h {
@@ -298,6 +365,14 @@ const Toggle = async (params) => {
       }
     }
   }
+
+  .sidebar {
+    display: none;
+  }
+
+  .activeSidebar {
+    display: flex;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
@@ -306,11 +381,14 @@ const Toggle = async (params) => {
     padding-right: 0;
     padding-top: 0;
     flex-direction: column;
+    padding-bottom: 0;
 
     .banner {
       display: flex;
       background-color: $artboardBanner;
-      padding: 10px 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      height: 40px;
       justify-content: space-between;
 
       .up {
@@ -330,12 +408,18 @@ const Toggle = async (params) => {
       }
     }
     .main {
-      padding-top: 16px;
+      // padding-top: 16px;
       padding-left: 20px;
       padding-right: 20px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      flex: auto;
       .col {
         .logo {
-          width: 100px;
+          width: 32px;
         }
         .menus {
           display: none;
@@ -356,6 +440,22 @@ const Toggle = async (params) => {
           display: flex;
         }
       }
+    }
+    .sidebar {
+      height: calc(100vh - 50px);
+      position: fixed;
+      background-color: white;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 5em;
+
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 24px;
     }
   }
 }
