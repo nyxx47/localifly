@@ -264,6 +264,18 @@
             </p>
           </div>
         </nuxt-link>
+        <nuxt-link to="blog/jasa-cek-grammar-jakarta" class="relative grow">
+          <NuxtImg
+            provider="cloudinary"
+            :src="image17"
+            class="w-full card object-cover thumbnail"
+          />
+          <div class="absolute bottom-0 preview-content p-4">
+            <p class="text-base font text-white">
+              Jasa Cek Grammar Jakarta Terpercaya, Paling Diminati!
+            </p>
+          </div>
+        </nuxt-link>
       </div>
     </div>
     <Footer />
@@ -296,6 +308,7 @@ const image13 =
 const image14 = "/v1717943684/Localifly/16060_p9ncj8.jpg";
 const image15 = "/v1717944088/Localifly/2299_hwnvqx.jpg";
 const image16 = "/v1718153318/Localifly/127905_tmniro.jpg";
+const image17 = "/v1718769338/Localifly/2150171388_mdjd13.jpg";
 
 useHead({
   title: "Blog | Resources and insights",
@@ -304,6 +317,10 @@ useHead({
       name: "description",
       content:
         "The latest industry news, language, laws, technologies, and resources.",
+    },
+    {
+      name: "keywords",
+      content: "Jasa Penerjemah Jakarta | Blog",
     },
   ],
 });

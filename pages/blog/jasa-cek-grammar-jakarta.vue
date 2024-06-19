@@ -152,6 +152,79 @@
               </p>
             </li>
           </ul>
+          <p class="text-base font-bold txt-primary mt-12 mb-2 leading-snug">
+            Layanan Proofreading Online
+          </p>
+          <p class="text-base mt-4 txt-primary">
+            Localifly menyediakan layanan proofreading online yang bisa diskusi
+            dengan kami tentang detail yang Anda butuhkan, target, dan informasi
+            tentang lama pengerjaan. Kemudian untuk pengiriman dokumennya, bisa
+            melalui email atau platform online lainnya.
+          </p>
+          <p class="text-base font-bold txt-primary mt-12 mb-2 leading-snug">
+            Berapa Lama Proses Pengerjaan Setiap Tulisan?
+          </p>
+          <p class="text-base mt-4 txt-primary">
+            Lama proses pengerjaan setiap tulisan di Localifly tergantung pada
+            beberapa faktor, antara lain:
+          </p>
+          <ul class="list-disc ml-6 mt-4">
+            <li class="mb-4">
+              <p>
+                <strong>Panjang dokumen: </strong>Semakin panjang dokumen,
+                semakin lama waktu pengerjaannya.
+              </p>
+            </li>
+            <li class="mb-4">
+              <p>
+                <strong>Kompleksitas dokumen: </strong>Dokumen yang kompleks
+                dengan banyak istilah teknis atau jargon membutuhkan waktu
+                pengerjaan yang lebih lama.
+              </p>
+            </li>
+            <li class="mb-4">
+              <p>
+                <strong>Ketersediaan proofreader: </strong>Kami memiliki tim
+                proofreader yang terampil dan berpengalaman, namun terkadang
+                kami mengalami keterbatasan waktu.
+              </p>
+            </li>
+          </ul>
+          <p class="text-base mt-4 txt-primary">
+            Secara umum, kami dapat menyelesaikan dokumen dengan panjang 500
+            kata dalam waktu 24 jam. Untuk dokumen yang lebih panjang, kami akan
+            memberikan perkiraan waktu pengerjaan yang lebih detail.
+          </p>
+          <p class="text-base font-bold txt-primary mt-12 mb-2 leading-snug">
+            Manfaat Menggunakan Layanan Pengecekan Grammar Jakarta
+          </p>
+          <p class="text-base mt-4 txt-primary">
+            Berikut ini merupakan manfaat menggunakan jasa cek Grammar di
+            Jakarta yaitu:
+          </p>
+          <ul class="list-numaric ml-6 mt-4">
+            <li class="mb-4">
+              <p>Akurat</p>
+            </li>
+            <li class="mb-4">
+              <p>Waktu dan Efisiensi</p>
+            </li>
+            <li class="mb-4">
+              <p>Meningkatkan Kualitas Tulisan</p>
+            </li>
+            <li class="mb-4">
+              <p>Sarana Pembelajaran</p>
+            </li>
+            <li class="mb-4">
+              <p>Pemahaman Konteks dan Budaya</p>
+            </li>
+            <li class="mb-4">
+              <p>Meningkatkan SEO dan Visibilitas Online</p>
+            </li>
+            <li class="mb-4">
+              <p>Meningkatkan Efektivitas Komunikasi</p>
+            </li>
+          </ul>
           <p
             class="text-base italic font-bold txt-primary mt-12 mb-2 leading-snug"
           >
@@ -164,6 +237,73 @@
               Proyek Anda!</nuxt-link
             >
           </p>
+          <p class="text-base font-bold txt-primary mt-12 mb-2 leading-snug">
+            Mengapa Harus Memilih Localifly?
+          </p>
+          <p class="text-base mt-4 txt-primary">
+            Memilih Localifly sebagai partner penerjemahan Anda adalah pilihan
+            yang tepat karena beberapa alasan berikut:
+          </p>
+          <ul class="list-disc ml-6 mt-4">
+            <li class="mb-4">
+              <p>
+                <strong>Pengalaman dan Keahlian </strong> <br />Localifly
+                memiliki tim penerjemah yang berpengalaman dan tersertifikasi di
+                berbagai bidang. Localifly telah menerjemahkan berbagai jenis
+                dokumen untuk berbagai klien, baik individu maupun perusahaan.
+              </p>
+            </li>
+            <li class="mb-4">
+              <p>
+                <strong>Kualitas </strong> <br />Kami berkomitmen untuk
+                memberikan layanan penerjemahan yang berkualitas tinggi. Kami
+                memastikan bahwa setiap dokumen yang kami terjemahkan akurat,
+                tepat waktu, dan sesuai dengan standar yang berlaku.
+              </p>
+            </li>
+            <li class="mb-4">
+              <p>
+                <strong>Harga Kompetitif </strong> <br />Localifly menawarkan
+                harga jasa penerjemahan yang kompetitif dan terjangkau. Kami
+                juga menyediakan berbagai paket layanan yang dapat disesuaikan
+                dengan kebutuhan dan anggaran Anda.
+              </p>
+            </li>
+            <li class="mb-4">
+              <p>
+                <strong>Layanan Pelanggan yang Baik </strong> <br />Localifly
+                menyediakan layanan pelanggan yang ramah dan responsif untuk
+                membantu Anda dengan segala kebutuhan penerjemahan Anda.
+              </p>
+            </li>
+            <li class="mb-4">
+              <p>
+                <strong>Teknologi Modern </strong> <br />Kami menggunakan
+                teknologi modern untuk membantu proses penerjemahan menjadi
+                lebih cepat dan efisien. Kami juga menyediakan platform online
+                yang memudahkan Anda untuk memesan dan mengelola proyek
+                penerjemahan Anda.
+              </p>
+            </li>
+            <li class="mb-4">
+              <p>
+                <strong>Kerahasiaan dan Keamanan </strong> <br />Localifly
+                menjaga kerahasiaan dan keamanan semua dokumen yang Anda
+                percayakan kepada kami. Kami memiliki sistem keamanan yang ketat
+                untuk memastikan bahwa dokumen Anda terlindungi dari pihak yang
+                tidak berwenang.
+              </p>
+            </li>
+          </ul>
+          <p class="text-base font-bold txt-primary mt-12 mb-2 leading-snug">
+            Hubungi Localifly Sekarang!
+          </p>
+          <p class="text-base mt-4 txt-primary">
+            <strong>Jangan ragu</strong> untuk menghubungi Localifly untuk
+            mendapatkan layanan cek grammar Jakarta terbaik. Anda bisa hubungi
+            kami pada nomor WhatsApp admin Localifly 0877-7744-6340 untuk
+            tanya-tanya tentang layanan Jasa Cek Grammar Jakarta.
+          </p>
         </div>
       </div>
     </div>
@@ -172,19 +312,19 @@
 </template>
 
 <script setup>
-const image = "/v1717944088/Localifly/2299_hwnvqx.jpg";
+const image = "/v1718769338/Localifly/2150171388_mdjd13.jpg";
 
 useHead({
-  title: "Jasa Proofreading Cepat Jakarta, Perbaiki Tulisan Skripsi Anda!",
+  title: "Jasa Cek Grammar Jakarta Terpercaya, Paling Diminati!",
   meta: [
     {
       name: "description",
       content:
-        "Jasa proofreading cepat Jakarta | Serahkan skripsi dan dokumen penting Anda kepada kami untuk pengecekan teks profesional | Hubungi 087777446340",
+        "Jasa Cek Grammar Jakarta | Localifly menerima layanan proofreading untuk pengecekan dan edit artikel, dokumen jurnal, skripsi bahasa indonesia - inggris",
     },
     {
       name: "keywords",
-      content: "Jasa Proofreading Cepat Jakarta",
+      content: "Jasa Cek Grammar Jakarta",
     },
   ],
 });
