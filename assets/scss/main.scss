@@ -9,6 +9,7 @@
 body {
   background-color: #ffffff;
   font-family: "Inter", sans-serif;
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 a {

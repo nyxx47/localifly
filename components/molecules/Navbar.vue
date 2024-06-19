@@ -130,17 +130,17 @@ const links = [
   },
   {
     label: "Terjemahan Dokumen",
-    to: "/jasa-penerjemah-tersumpah",
+    to: "/",
     click,
   },
   {
     label: "Legalisasi Dokumen",
-    to: "/jasa-legalisasi-dokumen",
+    to: "/",
     click,
   },
   {
     label: "Proofreading",
-    to: "/jasa-proofreading",
+    to: "/",
     click,
   },
   {
@@ -166,6 +166,13 @@ const copy = async () => {
 
 const Toggle = async (params) => {
   isActive.value = !params;
+  const body = document.getElementsByTagName("body")[0];
+
+  if (!params) {
+    body.classList.add("overflow-hidden");
+  } else {
+    body.classList.remove("overflow-hidden");
+  }
 };
 </script>
 
@@ -408,6 +415,8 @@ const Toggle = async (params) => {
       }
     }
     .main {
+      z-index: 100;
+      background: white;
       // padding-top: 16px;
       padding-left: 20px;
       padding-right: 20px;
@@ -442,16 +451,16 @@ const Toggle = async (params) => {
       }
     }
     .sidebar {
-      height: calc(100vh - 50px);
+      height: 100dvh;
       position: fixed;
       background-color: white;
-      bottom: 0;
+      top: 0;
       left: 0;
       width: 100%;
       padding-left: 20px;
       padding-right: 20px;
-      padding-top: 20px;
-      padding-bottom: 5em;
+      padding-top: 80px;
+      padding-bottom: 2em;
 
       flex-direction: column;
       justify-content: space-between;

@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "@nuxtjs/device",
     "@nuxtjs/sitemap",
     "@nuxt/image",
+    "@nuxtjs/ngrok",
   ],
   app: {
     head: {
@@ -60,5 +61,9 @@ export default defineNuxtConfig({
     cloudinary: {
       baseURL: "https://res.cloudinary.com/localifly/image/upload/",
     },
+  },
+  ngrok: {
+    // module options
+    authtoken: "7Vxb23rUiziZCngFw27Nm_2w5cub6dLjJfwsiZfHnqL",
   },
 });
