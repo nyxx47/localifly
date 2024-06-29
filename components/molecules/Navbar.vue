@@ -106,6 +106,7 @@
         target="_blank"
         block
         class="justify-between"
+        size="lg"
       >
         <template #trailing>
           <UIcon name="i-heroicons-arrow-right-20-solid" class="w-5 h-5" />
