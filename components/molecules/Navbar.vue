@@ -284,6 +284,9 @@ const Toggle = async (params) => {
           letter-spacing: 0.26px;
           width: max-content;
           color: $TextPrimary;
+          @media only screen and (min-width: 601px) and (max-width: 1080px) {
+            display: none;
+          }
         }
       }
 
