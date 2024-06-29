@@ -3,12 +3,13 @@
     <section class="m-0 pt-28 flex flex-wrap flex-row justify-center gap-4">
       <div
         v-for="data in datas"
+        :key="id"
         ref="wrapper"
         class="wrapper relative z-10 rounded-xl overflow-hidden p-[1px] hover:bg-[#374151] transition-colors duration-300 w-full"
         style="--x: -350px; --y: -350px"
       >
         <div class="inner rounded-xl p-6 h-full">
-          <img src="~/assets/icons/swatch.svg" alt="" srcset="" class="mb-4" />
+          <NuxtImg provider="cloudinary" :src="data.icon" class="mb-4 icon" />
           <h3 class="text-base font-bold mb-2">{{ data.title }}</h3>
           <p class="text-sm">
             {{ data.subtitle }}
@@ -23,18 +24,40 @@
 const id = useId();
 const datas = ref([
   {
-    id: id,
-    icon: "swatch",
+    icon: "/v1719690549/Localifly/icons/docs_ylfxzv.svg",
     title: "Akta kelahiran",
     subtitle:
       "Saat mengajukan ke instansi pemerintah untuk mendaftarkan kelahiran atau sebagai identifikasi.",
   },
   {
-    id: id,
-    icon: "swatch",
+    icon: "/v1719690549/Localifly/icons/docs_ylfxzv.svg",
     title: "Akte Perkawinan / Surat Nikah",
     subtitle:
       "Ketika mengajukan ke instansi pemerintah untuk mendapatkan pengakuan resmi atas pernikahan.",
+  },
+  {
+    icon: "/v1719690549/Localifly/icons/docs_ylfxzv.svg",
+    title: "Catatan Kriminal",
+    subtitle:
+      "Ketika mengajukan ke instansi pemerintah untuk visa atau izin tinggal, atau terkadang sebagai persyaratan kerja.",
+  },
+  {
+    icon: "/v1719690549/Localifly/icons/docs_ylfxzv.svg",
+    title: "Surat keterangan Dokter",
+    subtitle:
+      "Ketika ditunjukkan di negara tempat Anda akan bekerja atau mengakses layanan tertentu.",
+  },
+  {
+    icon: "/v1719690549/Localifly/icons/docs_ylfxzv.svg",
+    title: "Gelar universitas",
+    subtitle:
+      "Jika mengajukan ke lembaga pemerintah untuk memenuhi syarat gelar yang setara di negara tersebut.",
+  },
+  {
+    icon: "/v1719690549/Localifly/icons/docs_ylfxzv.svg",
+    title: "Sertifikasi Akademik",
+    subtitle:
+      "Ketika mengajukan ke lembaga atau pemberi kerja di negara di mana bahasa resmi berbeda dari bahasa aslinya.",
   },
 ]);
 
@@ -78,6 +101,10 @@ onUnmounted(() => {
   border: 1px solid #e2e8f0;
   .inner {
     background-color: white;
+
+    .icon {
+      width: 32px;
+    }
 
     h3 {
       color: $TextPrimary;

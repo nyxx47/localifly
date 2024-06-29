@@ -1,16 +1,5 @@
 <template>
   <div class="wrapper">
-    <!-- <div class="banner">
-      <p class="up">info@localifly.com</p>
-
-      <p>
-        0877-7744-6340<img
-          @click="copy"
-          src="~/assets/icons/copy.svg"
-          alt="svg"
-        />
-      </p>
-    </div> -->
     <div class="main">
       <div class="col">
         <nuxt-link to="/">
@@ -19,7 +8,7 @@
         <div class="menus">
           <nuxt-link to="/">Home</nuxt-link>
 
-          <div class="services">
+          <!-- <div class="services">
             <p>Layanan</p>
             <img src="~assets/icons/arrow1.svg" alt="arrow-down" />
             <div class="menu-s">
@@ -27,8 +16,18 @@
               <nuxt-link to="/legalisasi">Legalisasi Dokumen</nuxt-link>
               <nuxt-link to="/proofreading">Proofreading</nuxt-link>
             </div>
-          </div>
-          <nuxt-link to="/faq">FAQ</nuxt-link>
+          </div> -->
+          <UDropdown
+            :items="items"
+            mode="hover"
+            :popper="{ placement: 'bottom-start' }"
+          >
+            <div class="services">
+              <p>Layanan</p>
+              <img src="~assets/icons/arrow1.svg" alt="arrow-down" />
+            </div>
+          </UDropdown>
+          <nuxt-link to="/harga">Harga</nuxt-link>
           <nuxt-link to="/blog">Blog</nuxt-link>
           <nuxt-link to="/career" class="n-badge"
             >Become a Translator</nuxt-link
@@ -119,6 +118,25 @@
 <script setup>
 const isActive = ref(false);
 const toast = useToast();
+const items = [
+  [
+    {
+      label: "Terjemahan Dokumen",
+      // avatar: {
+      //   src: "https://avatars.githubusercontent.com/u/739984?v=4",
+      // },
+      to: "/terjemahan-dokumen",
+    },
+    {
+      label: "Legalisasi Dokumen",
+      to: "/legalisasi-dokumen",
+    },
+    {
+      label: "Proofreading",
+      to: "/proofreading",
+    },
+  ],
+];
 const click = () => {
   Toggle(isActive);
 };
@@ -130,17 +148,17 @@ const links = [
   },
   {
     label: "Terjemahan Dokumen",
-    to: "/",
+    to: "/terjemahan-dokumen",
     click,
   },
   {
     label: "Legalisasi Dokumen",
-    to: "/",
+    to: "/legalisasi-dokumen",
     click,
   },
   {
     label: "Proofreading",
-    to: "/",
+    to: "/proofreading",
     click,
   },
   {
