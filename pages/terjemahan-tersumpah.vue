@@ -66,7 +66,7 @@
           mengesahkan keabsahan hukumnya
         </p>
       </div>
-      <div class="m-0 pt-28 flex flex-wrap flex-row justify-center gap-4 cards">
+      <div class="m-0 flex flex-wrap flex-row justify-center gap-4 cards">
         <div
           v-for="data in datas"
           :key="id"
@@ -82,6 +82,14 @@
             </p>
           </div>
         </div>
+      </div>
+      <div class="end-of-section">
+        <p class="text-base">
+          Jika Anda tidak yakin apakah dokumen Anda perlu diterjemahkan oleh
+          penerjemah tersumpah, sebaiknya bicarakan dengan organisasi yang
+          meminta dokumen tersebut. Jika Anda tidak memerlukan terjemahan
+          tersumpah, Anda dapat mencari penerjemah standar di sini.
+        </p>
       </div>
     </div>
     <div class="section-5">
@@ -126,7 +134,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 useHead({
   title: "Layanan Terjemahan Tersumpah",
   meta: [
@@ -180,7 +188,7 @@ const datas = ref([
 
 const card = ref(null);
 
-function mouseMoveGradient(e: MouseEvent) {
+function mouseMoveGradient(e) {
   for (let i = 0; i < card.value.length; i++) {
     const rect = card.value[i]?.getBoundingClientRect();
 
@@ -208,21 +216,58 @@ onUnmounted(() => {
 const faq = ref([
   {
     id: 0,
-    title: "Do I need specific software to be a translator for Localifly?",
-    content: "No, You can use any software.",
+    title: "Apa itu penerjemah tersumpah?",
+    content:
+      "Penerjemah tersumpah adalah penerjemah yang telah lulus ujian kualifikasi dan disumpah oleh pejabat berwenang untuk menerjemahkan dokumen resmi dengan keabsahan hukum.",
     isOpen: false,
   },
   {
     id: 1,
-    title: "How are rates set?",
+    title: "Kapan saya memerlukan penerjemah tersumpah?",
     content:
-      "You will receive 40% for every single page. For example, the price for Indonesian to English is Rp75,000, and you will get Rp30,000 for every page.",
+      "Anda memerlukan penerjemah tersumpah ketika dokumen yang diterjemahkan akan digunakan untuk keperluan resmi seperti pengajuan visa, registrasi pernikahan, atau pengakuan gelar di luar negeri.",
     isOpen: false,
   },
   {
     id: 2,
-    title: "How and when do I get paid?",
-    content: "You will get paid one week after the project is done.",
+    title: "Kapan saya memerlukan penerjemah tersumpah?",
+    content:
+      "Anda memerlukan penerjemah tersumpah ketika dokumen yang diterjemahkan akan digunakan untuk keperluan resmi seperti pengajuan visa, registrasi pernikahan, atau pengakuan gelar di luar negeri.",
+    isOpen: false,
+  },
+  {
+    id: 3,
+    title: "Apa perbedaan antara penerjemah biasa dan penerjemah tersumpah?",
+    content:
+      "Penerjemah tersumpah memiliki kewenangan resmi dan kualifikasi hukum untuk menerjemahkan dokumen yang memerlukan keabsahan hukum, sedangkan penerjemah biasa tidak memiliki kewenangan tersebut.",
+    isOpen: false,
+  },
+  {
+    id: 4,
+    title: "Dokumen apa saja yang memerlukan terjemahan tersumpah?",
+    content:
+      "Dokumen yang biasanya memerlukan terjemahan tersumpah meliputi akta kelahiran, akta pernikahan, ijazah, transkrip akademik, dokumen hukum, dan dokumen keimigrasian.",
+    isOpen: false,
+  },
+  {
+    id: 5,
+    title: "Berapa biaya untuk jasa penerjemah tersumpah?",
+    content:
+      "Biaya penerjemahan tersumpah bervariasi tergantung pada jenis dan jumlah dokumen. Silakan hubungi kami untuk mendapatkan penawaran harga yang lebih rinci.",
+    isOpen: false,
+  },
+  {
+    id: 6,
+    title: "Apakah terjemahan tersumpah diakui di luar negeri?",
+    content:
+      "Ya, terjemahan tersumpah diakui secara internasional, asalkan diterjemahkan oleh penerjemah yang diakui oleh lembaga berwenang di negara asal.",
+    isOpen: false,
+  },
+  {
+    id: 7,
+    title: "Apakah saya perlu menyerahkan dokumen asli untuk diterjemahkan?",
+    content:
+      "Tidak selalu. Dalam banyak kasus, salinan dokumen cukup. Namun, beberapa lembaga mungkin memerlukan dokumen asli untuk validasi.",
     isOpen: false,
   },
 ]);
@@ -318,7 +363,7 @@ const ToggleFaq = (id) => {
       }
 
       p {
-        font-size: 14px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: 150%;
@@ -407,6 +452,22 @@ const ToggleFaq = (id) => {
           letter-spacing: 0.26px;
           text-align: center;
         }
+      }
+    }
+    .end-of-section {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+      p {
+        width: 90%;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.26px;
+        color: $TextPrimary;
+        text-align: center;
       }
     }
   }
