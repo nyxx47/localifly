@@ -66,7 +66,9 @@
           mengesahkan keabsahan hukumnya
         </p>
       </div>
-      <div class="m-0 flex flex-wrap flex-row justify-center gap-4 cards">
+      <div
+        class="m-0 flex flex-wrap flex-row justify-center gap-4 cards container"
+      >
         <div
           v-for="data in datas"
           :key="id"
@@ -77,7 +79,7 @@
           <div class="inner rounded-xl p-6 h-full">
             <NuxtImg provider="cloudinary" :src="data.icon" class="mb-4 icon" />
             <h3 class="text-base font-bold mb-2">{{ data.title }}</h3>
-            <p class="text-sm">
+            <p class="text-base">
               {{ data.subtitle }}
             </p>
           </div>
@@ -90,6 +92,60 @@
           meminta dokumen tersebut. Jika Anda tidak memerlukan terjemahan
           tersumpah, Anda dapat mencari penerjemah standar di sini.
         </p>
+      </div>
+    </div>
+    <div class="section-2">
+      <div class="s-header">
+        <h2>Pesan Terjemahan dalam 3 Langkah</h2>
+        <p>Proses cepat dan mudah untuk mendapatkan terjemahan berkualitas</p>
+      </div>
+      <div class="wrap container">
+        <div class="col">
+          <NuxtImg src="/company.svg" />
+          <p>Kirim atau scan dari dokumen yang perlu Anda terjemahkan</p>
+        </div>
+        <div class="col">
+          <img src="~/assets/icons/personal.svg" alt="perusahaan" />
+          <p>Dapatkan penawaran gratis dalam hitungan menit dan terima</p>
+        </div>
+        <div class="col">
+          <img src="~/assets/icons/akademik.svg" alt="perusahaan" />
+          <p>
+            Terima dokumen terjemahan tersumpah Anda di rumah atau kantor Anda
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section-1">
+      <div class="s-header">
+        <h2>Apa yang bisa saya terjemahkan?</h2>
+        <p>
+          Kita dapat menerjemahkan sebagian besar jenis dokumen, dengan dukungan
+          jenis file berikut:
+        </p>
+      </div>
+      <div class="wrap types-wrapper">
+        <div class="col">
+          <NuxtImg src="/icons/text.svg" class="icon-type" />
+          <p>Plain Text</p>
+        </div>
+
+        <div class="col">
+          <NuxtImg src="/icons/csv.svg" class="icon-type" />
+          <p>CSV</p>
+        </div>
+        <div class="col">
+          <NuxtImg src="/icons/office.svg" class="icon-type" />
+          <p>Microsoft Office</p>
+        </div>
+        <div class="col">
+          <NuxtImg src="/icons/html.svg" class="icon-type" />
+          <p>HTML</p>
+        </div>
+        <div class="col">
+          <NuxtImg src="/icons/csv.svg" class="icon-type" />
+          <p>XLIFF</p>
+        </div>
       </div>
     </div>
     <div class="section-5">
@@ -136,12 +192,21 @@
 
 <script setup>
 useHead({
-  title: "Layanan Terjemahan Tersumpah",
+  title: "Layanan Terjemahan Tersumpah - Penerjemah Resmi untuk Dokumen Anda",
   meta: [
     {
       name: "description",
       content:
-        "Are you a seasoned translator or a specialist fluent in multiple languages? Join our team and bring your expertise to the table!",
+        "Kami menyediakan layanan terjemahan tersumpah untuk dokumen hukum, akta kelahiran, ijazah, dan lainnya. Diterjemahkan oleh penerjemah tersumpah yang berpengalaman dan diakui secara internasional.",
+    },
+    {
+      name: "keywords",
+      content:
+        "Layanan terjemahan tersumpah, penerjemah tersumpah, terjemahan resmi, penerjemah dokumen hukum, terjemahan akta kelahiran, terjemahan ijazah, terjemahan tersumpah Indonesia, jasa penerjemah tersumpah",
+    },
+    {
+      name: "robots",
+      content: "index, follow",
     },
   ],
 });
@@ -318,7 +383,7 @@ const ToggleFaq = (id) => {
         gap: 12px;
         h2 {
           color: $TextPrimary;
-          font-size: 18px;
+          font-size: 24px;
           font-weight: 700;
           line-height: 22px;
           letter-spacing: 2%;
@@ -327,7 +392,7 @@ const ToggleFaq = (id) => {
 
         p {
           color: $TextSecondary;
-          font-size: 14px;
+          font-size: 16px;
           font-weight: 400;
           line-height: 150%;
           letter-spacing: 2%;
@@ -345,6 +410,7 @@ const ToggleFaq = (id) => {
     justify-content: center;
     padding-top: 8em;
     padding-bottom: 8em;
+    align-items: center;
 
     .s-header {
       display: flex;
@@ -352,13 +418,13 @@ const ToggleFaq = (id) => {
       gap: 12px;
       align-items: center;
       h2 {
-        font-size: 18px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 700 !important;
         line-height: 130%;
         letter-spacing: 0.72px;
         color: #293237;
-        width: 50%;
+        width: 70%;
         text-align: center;
       }
 
@@ -369,14 +435,14 @@ const ToggleFaq = (id) => {
         line-height: 150%;
         letter-spacing: 0.26px;
         color: #708089;
-        width: 70%;
+        width: 80%;
         text-align: center;
       }
     }
 
     .cards {
       .card {
-        flex-basis: 30%;
+        flex-basis: 32.5%;
         @media only screen and (min-width: 320px) and (max-width: 600px) {
           flex-basis: 100%;
         }
@@ -417,6 +483,9 @@ const ToggleFaq = (id) => {
         z-index: -1;
       }
     }
+    .types-wrapper {
+      gap: 80px !important;
+    }
     .wrap {
       display: flex;
       flex-direction: row;
@@ -429,6 +498,10 @@ const ToggleFaq = (id) => {
         flex-direction: column;
         gap: 16px;
         align-items: center;
+        .icon-type {
+          width: 32px;
+          margin: 0 !important;
+        }
         img {
           width: fit-content;
           margin-bottom: 0.5em;
@@ -445,7 +518,7 @@ const ToggleFaq = (id) => {
 
         p {
           color: $TextSecondary;
-          font-size: 14px;
+          font-size: 16px;
           font-style: normal;
           font-weight: 400;
           line-height: 150%; /* 19.5px */
@@ -468,6 +541,71 @@ const ToggleFaq = (id) => {
         letter-spacing: 0.26px;
         color: $TextPrimary;
         text-align: center;
+      }
+    }
+  }
+
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 5em;
+    padding-bottom: 15em;
+    align-items: center;
+    gap: 24px;
+    .s-header {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+      h2 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700 !important;
+        line-height: 130%;
+        letter-spacing: 0.72px;
+        color: #293237;
+        width: 100%;
+        text-align: center;
+      }
+
+      p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.26px;
+        color: #708089;
+        width: 80%;
+        text-align: center;
+      }
+    }
+
+    .wrap {
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+      border: 1px solid #e8ebee;
+      border-radius: 16px;
+      padding: 32px;
+
+      .col {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        img {
+          width: 24px;
+          margin-bottom: 0.5em;
+        }
+
+        p {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 19.5px */
+          letter-spacing: 0.26px;
+        }
       }
     }
   }
@@ -500,7 +638,7 @@ const ToggleFaq = (id) => {
       }
 
       p {
-        font-size: 14px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: 150%;
@@ -592,7 +730,7 @@ const ToggleFaq = (id) => {
 
         p {
           color: $TextSecondary;
-          font-size: 14px;
+          font-size: 16px;
           font-weight: 400;
           line-height: 150%;
           letter-spacing: 2%;

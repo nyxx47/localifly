@@ -202,7 +202,8 @@ const Toggle = async (params) => {
 
 <style lang="scss" scoped>
 .wrapper {
-  padding: 16px 72px 16px 72px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   position: fixed;
   background-color: $ArtboardSurface;
   width: 100%;
@@ -219,7 +220,7 @@ const Toggle = async (params) => {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: 1440px;
+    // max-width: 1440px;
     flex: 1;
     .col {
       display: flex;
