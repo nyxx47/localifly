@@ -1,5 +1,11 @@
 <template>
   <UContainer>
+    <div>
+      <h1>TEST</h1>
+      <br />
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <h1>TEST</h1>
+    </div>
     <section class="m-0 pt-28 flex flex-wrap flex-row justify-center gap-4">
       <div
         v-for="data in datas"
@@ -61,15 +67,15 @@ const datas = ref([
   },
 ]);
 
-const wrapper = ref<Array<HTMLElement | null>>([]);
+const wrapper = ref("wrapper");
 
 function mouseMoveGradient(e: MouseEvent) {
   for (let i = 0; i < wrapper.value.length; i++) {
     const rect = wrapper.value[i]?.getBoundingClientRect();
 
     if (rect) {
-      const x = e.pageX;
-      const y = e.pageY;
+      const x = e.clientX;
+      const y = e.clientY;
 
       const diffX = x - rect.x;
       const diffY = y - rect.y;

@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <div class="main">
+    <div class="main container">
       <div class="col">
         <nuxt-link to="/">
           <img class="logo" src="~/assets/logo.svg" alt="localifly logo" />
@@ -28,10 +28,10 @@
             </div>
           </UDropdown>
           <nuxt-link to="/harga">Harga</nuxt-link>
-          <nuxt-link to="/blog">Blog</nuxt-link>
-          <nuxt-link to="/career" class="n-badge"
+          <nuxt-link to="/faq">FAQ</nuxt-link>
+          <!-- <nuxt-link to="/career" class="n-badge"
             >Become a Translator</nuxt-link
-          >
+          > -->
         </div>
       </div>
 
@@ -122,11 +122,16 @@ const toast = useToast();
 const items = [
   [
     {
-      label: "Terjemahan Dokumen",
-      // avatar: {
-      //   src: "https://avatars.githubusercontent.com/u/739984?v=4",
-      // },
-      to: "/terjemahan-dokumen",
+      label: "Terjemahan Tersumpah",
+      to: "/terjemahan-tersumpah",
+    },
+    {
+      label: "Terjemahan Standar",
+      to: "/terjemahan-biasa",
+    },
+    {
+      label: "Lokasisasi",
+      to: "/lokalisasi",
     },
     {
       label: "Legalisasi Dokumen",
@@ -148,8 +153,8 @@ const links = [
     click,
   },
   {
-    label: "Terjemahan Dokumen",
-    to: "/terjemahan-dokumen",
+    label: "Terjemahan Tersumpah",
+    to: "/terjemahan-tersumpah",
     click,
   },
   {
