@@ -29,7 +29,7 @@
       </div>
       <div class="wrap">
         <div class="col">
-          <img src="~/assets/icons/personal.svg" alt="perusahaan" />
+          <NuxtImg src="/icons/pm.svg" style="width: 32px; height: 32px" />
           <h5>Manajer Proyek Pribadi</h5>
           <p>
             PM pribadi akan membantu proses penerjemah dan memastikan dokumen
@@ -38,7 +38,7 @@
           <!-- <OrganismsButton content="Learn More" type="secondary" /> -->
         </div>
         <div class="col">
-          <img src="~/assets/icons/akademik.svg" alt="perusahaan" />
+          <NuxtImg src="/icons/hq.svg" style="width: 32px; height: 32px" />
           <h5>Kualitas terjamin</h5>
           <p>
             Setiap penerjemah tersumpah kami memiliki akreditasi dan sertifikasi
@@ -47,7 +47,7 @@
           <!-- <OrganismsButton content="Learn More" type="secondary" /> -->
         </div>
         <div class="col">
-          <img src="~/assets/icons/company.svg" alt="perusahaan" />
+          <NuxtImg src="/icons/secure.svg" style="width: 32px; height: 32px" />
           <h5>Keamanan dan kerahasiaan</h5>
           <p>
             Kami mengutamakan keamanan dan kerahasiaan data pribadi Anda,
@@ -101,15 +101,15 @@
       </div>
       <div class="wrap container">
         <div class="col">
-          <NuxtImg src="/company.svg" />
+          <NuxtImg src="/icons/1.svg" />
           <p>Kirim atau scan dari dokumen yang perlu Anda terjemahkan</p>
         </div>
         <div class="col">
-          <img src="~/assets/icons/personal.svg" alt="perusahaan" />
+          <NuxtImg src="/icons/2.svg" />
           <p>Dapatkan penawaran gratis dalam hitungan menit dan terima</p>
         </div>
         <div class="col">
-          <img src="~/assets/icons/akademik.svg" alt="perusahaan" />
+          <NuxtImg src="/icons/3.svg" />
           <p>
             Terima dokumen terjemahan tersumpah Anda di rumah atau kantor Anda
           </p>
@@ -143,7 +143,7 @@
           <p>HTML</p>
         </div>
         <div class="col">
-          <NuxtImg src="/icons/csv.svg" class="icon-type" />
+          <NuxtImg src="/icons/xliff.svg" class="icon-type" />
           <p>XLIFF</p>
         </div>
       </div>
@@ -214,37 +214,37 @@ useHead({
 const id = useId();
 const datas = ref([
   {
-    icon: "/v1719690549/Localifly/icons/docs_ylfxzv.svg",
+    icon: "/v1719838409/Localifly/icons/birth_rrollp.svg",
     title: "Akta kelahiran",
     subtitle:
       "Saat mengajukan ke instansi pemerintah untuk mendaftarkan kelahiran atau sebagai identifikasi.",
   },
   {
-    icon: "/v1719690549/Localifly/icons/docs_ylfxzv.svg",
+    icon: "/v1719838409/Localifly/icons/married_gpqtgq.svg",
     title: "Akte Perkawinan / Surat Nikah",
     subtitle:
       "Ketika mengajukan ke instansi pemerintah untuk mendapatkan pengakuan resmi atas pernikahan.",
   },
   {
-    icon: "/v1719690549/Localifly/icons/docs_ylfxzv.svg",
+    icon: "/v1719838409/Localifly/icons/criminal_nozefg.svg",
     title: "Catatan Kriminal",
     subtitle:
       "Ketika mengajukan ke instansi pemerintah untuk visa atau izin tinggal, atau terkadang sebagai persyaratan kerja.",
   },
   {
-    icon: "/v1719690549/Localifly/icons/docs_ylfxzv.svg",
+    icon: "/v1719838409/Localifly/icons/medicine_f8cctl.svg",
     title: "Surat keterangan Dokter",
     subtitle:
       "Ketika ditunjukkan di negara tempat Anda akan bekerja atau mengakses layanan tertentu.",
   },
   {
-    icon: "/v1719690549/Localifly/icons/docs_ylfxzv.svg",
-    title: "Gelar universitas",
+    icon: "/v1719838409/Localifly/icons/driver_kzzz0k.svg",
+    title: "Surat izin Mengemudi",
     subtitle:
-      "Jika mengajukan ke lembaga pemerintah untuk memenuhi syarat gelar yang setara di negara tersebut.",
+      "Saat mengajukan ke lembaga pemerintah untuk mendapatkan lisensi setara di negara tujuan.",
   },
   {
-    icon: "/v1719690549/Localifly/icons/docs_ylfxzv.svg",
+    icon: "/v1719838409/Localifly/icons/academy_vpdt3y.svg",
     title: "Sertifikasi Akademik",
     subtitle:
       "Ketika mengajukan ke lembaga atau pemberi kerja di negara di mana bahasa resmi berbeda dari bahasa aslinya.",
@@ -551,7 +551,7 @@ const ToggleFaq = (id) => {
     align-items: center;
 
     padding-top: 5em;
-    padding-bottom: 15em;
+    padding-bottom: 5em;
     align-items: center;
     gap: 24px;
     .s-header {
@@ -577,7 +577,7 @@ const ToggleFaq = (id) => {
         line-height: 150%;
         letter-spacing: 0.26px;
         color: #708089;
-        width: 80%;
+        width: 100%;
         text-align: center;
       }
     }
@@ -586,25 +586,31 @@ const ToggleFaq = (id) => {
       display: flex;
       flex-direction: row;
       gap: 32px;
-      border: 1px solid #e8ebee;
       border-radius: 16px;
       padding: 32px;
+      margin-top: 3em;
+      @media only screen and (min-width: 320px) and (max-width: 600px) {
+        flex-direction: column;
+      }
 
       .col {
         display: flex;
         flex-direction: column;
         gap: 16px;
+        align-items: center;
         img {
-          width: 24px;
+          height: 32px;
           margin-bottom: 0.5em;
         }
 
         p {
+          color: $TextPrimary;
           font-size: 16px;
           font-style: normal;
           font-weight: 400;
           line-height: 150%; /* 19.5px */
           letter-spacing: 0.26px;
+          text-align: center;
         }
       }
     }
