@@ -130,10 +130,6 @@ const items = [
       to: "/terjemahan-biasa",
     },
     {
-      label: "Lokasisasi",
-      to: "/lokalisasi",
-    },
-    {
       label: "Legalisasi Dokumen",
       to: "/legalisasi-dokumen",
     },

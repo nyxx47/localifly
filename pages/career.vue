@@ -3,7 +3,7 @@
     <div class="head-wrap">
       <div class="header">
         <div class="wrap">
-          <img src="~/assets/images/avatars.svg" alt="avatars" />
+          <NuxtImg src="/icons/avatars.svg" alt="avatars" />
           <h2>Become a translator</h2>
           <p>
             Are you a seasoned translator or a specialist fluent in multiple
@@ -32,7 +32,7 @@
       </div>
       <div class="wrap">
         <div class="col">
-          <img src="~/assets/icons/company.svg" alt="perusahaan" />
+          <NuxtImg src="/company.svg" alt="perusahaan" />
           <h5>Work from anywhere</h5>
           <p>
             You have the freedom to define your workspace. Work when and where
@@ -41,7 +41,7 @@
           <!-- <OrganismsButton content="Learn More" type="secondary" /> -->
         </div>
         <div class="col">
-          <img src="~/assets/icons/personal.svg" alt="perusahaan" />
+          <NuxtImg src="/icons/personal.svg" alt="pribadi" />
           <h5>Take the jobs that interest you</h5>
           <p>
             Our project managers match you with translation tasks aligned with
@@ -50,7 +50,7 @@
           <!-- <OrganismsButton content="Learn More" type="secondary" /> -->
         </div>
         <div class="col">
-          <img src="~/assets/icons/akademik.svg" alt="perusahaan" />
+          <NuxtImg src="/icons/akademik.svg" alt="akademik" />
           <h5>Full support</h5>
           <p>
             We handle all the administrative tasks and billing, allowing you to
@@ -69,8 +69,8 @@
         <div class="faq" v-for="(item, index) in faq" :key="index">
           <div class="faq-btn" @click="ToggleFaq(item.id)">
             <h2>{{ item.title }}</h2>
-            <img
-              src="~/assets/icons/chevron-down.svg"
+            <NuxtImg
+              src="/icons/chevron-down.svg"
               :class="{ isRotate: item.isOpen }"
               alt="chevron-down"
             />
@@ -82,7 +82,11 @@
       </div>
       <div class="box-wrapper">
         <div class="wrap">
-          <img src="~/assets/images/avatars.svg" alt="avatars" />
+          <NuxtImg
+            src="/icons/avatars.svg"
+            style="height: 56px"
+            alt="avatars"
+          />
           <h2>Still Have Any Questions?</h2>
           <p>
             Can't find the answer you're looking for? Please contact our team.

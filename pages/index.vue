@@ -22,7 +22,7 @@
       <h2>Spesialisasi terjemahan bahasa kami</h2>
       <div class="wrap">
         <div class="col">
-          <NuxtImg src="/company.svg" />
+          <NuxtImg src="/company.svg" alt="perusahaan" />
           <h5>Perusahaan</h5>
           <p>
             Terjemahan tersumpah akta pendirian, Izin Prinsip, SIUP, TDP, NPWP,
@@ -30,7 +30,7 @@
           </p>
         </div>
         <div class="col">
-          <img src="~/assets/icons/personal.svg" alt="perusahaan" />
+          <NuxtImg src="/icons/personal.svg" alt="pribadi" />
           <h5>Pribadi</h5>
           <p>
             Jasa translate tersumpah (sworn translation) KTP, paspor, KK, akta
@@ -38,7 +38,7 @@
           </p>
         </div>
         <div class="col">
-          <img src="~/assets/icons/akademik.svg" alt="perusahaan" />
+          <NuxtImg src="/icons/akademik.svg" alt="akademik" />
           <h5>Akademik</h5>
           <p>
             Jasa penerjemah tersumpah ijazah, transkrip nilai, SKHUN, rapor,
@@ -59,7 +59,7 @@
         <div class="languages">
           <div class="language">
             <div class="col">
-              <img src="@/assets/images/jp.svg" alt="bahasa jepang" />
+              <NuxtImg src="/icons/jp.svg" alt="bahasa jepang" />
               <p>Japanese</p>
               <div class="badge unavailable"><p>Full Booked</p></div>
             </div>
@@ -73,21 +73,21 @@
           </div> -->
           <div class="language">
             <div class="col">
-              <img src="@/assets/images/mandarin.svg" alt="bahasa mandarin" />
+              <NuxtImg src="/icons/mandarin.svg" alt="bahasa mandarin" />
               <p>Mandarin</p>
               <div class="badge unavailable"><p>Full Booked</p></div>
             </div>
           </div>
           <div class="language">
             <div class="col">
-              <img src="@/assets/images/uk.svg" alt="bahasa inggris" />
+              <NuxtImg src="/icons/uk.svg" alt="bahasa inggris" />
               <p>English</p>
               <div class="badge available"><p>Available</p></div>
             </div>
           </div>
           <div class="language">
             <div class="col">
-              <img src="@/assets/images/dutch.svg" alt="bahasa belanda" />
+              <NuxtImg src="/icons/dutch.svg" alt="bahasa belanda" />
               <p>Belanda</p>
               <div class="badge available"><p>Available</p></div>
             </div>
@@ -134,8 +134,8 @@
         <div class="faq" v-for="(item, index) in faq" :key="index">
           <div class="faq-btn" @click="ToggleFaq(item.id)">
             <h2>{{ item.title }}</h2>
-            <img
-              src="~/assets/icons/chevron-down.svg"
+            <NuxtImg
+              src="/icons/chevron-down.svg"
               :class="{ isRotate: item.isOpen }"
               alt="chevron-down"
             />
@@ -147,7 +147,11 @@
       </div>
       <div class="box-wrapper">
         <div class="wrap">
-          <img src="~/assets/images/avatars.svg" alt="avatars" />
+          <NuxtImg
+            src="/icons/avatars.svg"
+            style="height: 56px"
+            alt="avatars"
+          />
           <h2>Masih Punya Pertanyaan?</h2>
           <p>
             Tidak dapat menemukan jawaban yang Anda cari? Silakan hubungi dengan

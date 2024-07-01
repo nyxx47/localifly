@@ -3,7 +3,12 @@
     <div class="head-wrap container">
       <div class="header">
         <div class="wrap">
-          <img src="~/assets/images/avatars.svg" alt="avatars" />
+          <NuxtImg
+            src="/icons/sworn.svg"
+            style="width: 40px; height: 40px"
+            alt="icon penerjemah tersumpah"
+            class="mb-4"
+          />
           <h2>Layanan terjemahan tersumpah</h2>
           <p>
             Butuh terjemahan resmi yang diakui? Localifly memahami persyaratan
@@ -29,7 +34,11 @@
       </div>
       <div class="wrap">
         <div class="col">
-          <NuxtImg src="/icons/pm.svg" style="width: 32px; height: 32px" />
+          <NuxtImg
+            src="/icons/pm.svg"
+            alt="Manajer Proyek Pribadi"
+            style="width: 32px; height: 32px"
+          />
           <h5>Manajer Proyek Pribadi</h5>
           <p>
             PM pribadi akan membantu proses penerjemah dan memastikan dokumen
@@ -38,22 +47,28 @@
           <!-- <OrganismsButton content="Learn More" type="secondary" /> -->
         </div>
         <div class="col">
-          <NuxtImg src="/icons/hq.svg" style="width: 32px; height: 32px" />
+          <NuxtImg
+            src="/icons/hq.svg"
+            alt="Kualitas terjamin"
+            style="width: 32px; height: 32px"
+          />
           <h5>Kualitas terjamin</h5>
           <p>
             Setiap penerjemah tersumpah kami memiliki akreditasi dan sertifikasi
             dari otoritas pemerintah di Indonesia
           </p>
-          <!-- <OrganismsButton content="Learn More" type="secondary" /> -->
         </div>
         <div class="col">
-          <NuxtImg src="/icons/secure.svg" style="width: 32px; height: 32px" />
+          <NuxtImg
+            src="/icons/secure.svg"
+            alt="Keamanan dan kerahasiaan"
+            style="width: 32px; height: 32px"
+          />
           <h5>Keamanan dan kerahasiaan</h5>
           <p>
             Kami mengutamakan keamanan dan kerahasiaan data pribadi Anda,
             menangani informasi rahasia dengan hati-hati
           </p>
-          <!-- <OrganismsButton content="Learn More" type="secondary" /> -->
         </div>
       </div>
     </div>
@@ -77,7 +92,12 @@
           style="--x: -350px; --y: -350px"
         >
           <div class="inner rounded-xl p-6 h-full">
-            <NuxtImg provider="cloudinary" :src="data.icon" class="mb-4 icon" />
+            <NuxtImg
+              provider="cloudinary"
+              :src="data.icon"
+              :alt="data.title"
+              class="mb-4 icon"
+            />
             <h3 class="text-base font-bold mb-2">{{ data.title }}</h3>
             <p class="text-base">
               {{ data.subtitle }}
@@ -101,15 +121,15 @@
       </div>
       <div class="wrap container">
         <div class="col">
-          <NuxtImg src="/icons/1.svg" />
+          <NuxtImg src="/icons/1.svg" alt="kirim" />
           <p>Kirim atau scan dari dokumen yang perlu Anda terjemahkan</p>
         </div>
         <div class="col">
-          <NuxtImg src="/icons/2.svg" />
+          <NuxtImg src="/icons/2.svg" alt="penawaran gratis" />
           <p>Dapatkan penawaran gratis dalam hitungan menit dan terima</p>
         </div>
         <div class="col">
-          <NuxtImg src="/icons/3.svg" />
+          <NuxtImg src="/icons/3.svg" alt="dokumen terjemahan tersumpah" />
           <p>
             Terima dokumen terjemahan tersumpah Anda di rumah atau kantor Anda
           </p>
@@ -126,24 +146,28 @@
       </div>
       <div class="wrap types-wrapper">
         <div class="col">
-          <NuxtImg src="/icons/text.svg" class="icon-type" />
+          <NuxtImg src="/icons/text.svg" alt="plain text" class="icon-type" />
           <p>Plain Text</p>
         </div>
 
         <div class="col">
-          <NuxtImg src="/icons/csv.svg" class="icon-type" />
+          <NuxtImg src="/icons/csv.svg" alt="csv" class="icon-type" />
           <p>CSV</p>
         </div>
         <div class="col">
-          <NuxtImg src="/icons/office.svg" class="icon-type" />
+          <NuxtImg
+            src="/icons/office.svg"
+            alt="microsoft office"
+            class="icon-type"
+          />
           <p>Microsoft Office</p>
         </div>
         <div class="col">
-          <NuxtImg src="/icons/html.svg" class="icon-type" />
+          <NuxtImg src="/icons/html.svg" alt="html" class="icon-type" />
           <p>HTML</p>
         </div>
         <div class="col">
-          <NuxtImg src="/icons/xliff.svg" class="icon-type" />
+          <NuxtImg src="/icons/xliff.svg" alt="xliff" class="icon-type" />
           <p>XLIFF</p>
         </div>
       </div>
@@ -157,8 +181,8 @@
         <div class="faq" v-for="(item, index) in faq" :key="index">
           <div class="faq-btn" @click="ToggleFaq(item.id)">
             <h2>{{ item.title }}</h2>
-            <img
-              src="~/assets/icons/chevron-down.svg"
+            <NuxtImg
+              src="/icons/chevron-down.svg"
               :class="{ isRotate: item.isOpen }"
               alt="chevron-down"
             />
@@ -170,7 +194,11 @@
       </div>
       <div class="box-wrapper">
         <div class="wrap">
-          <img src="~/assets/images/avatars.svg" alt="avatars" />
+          <NuxtImg
+            src="/icons/avatars.svg"
+            style="height: 56px"
+            alt="avatars"
+          />
           <h2>Still Have Any Questions?</h2>
           <p>
             Can't find the answer you're looking for? Please contact our team.
