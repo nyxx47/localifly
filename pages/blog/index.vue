@@ -276,6 +276,36 @@
             </p>
           </div>
         </nuxt-link>
+        <nuxt-link
+          to="blog/jasa-penerjemah-bahasa-inggris-jakarta"
+          class="relative grow"
+        >
+          <NuxtImg
+            provider="cloudinary"
+            :src="image18"
+            class="w-full card object-cover thumbnail"
+          />
+          <div class="absolute bottom-0 preview-content p-4">
+            <p class="text-base font text-white">
+              Jasa Penerjemah Bahasa Inggris Jakarta Akurat dan Tersumpah
+            </p>
+          </div>
+        </nuxt-link>
+        <nuxt-link
+          to="blog/jasa-penerjemah-essay-jakarta"
+          class="relative grow"
+        >
+          <NuxtImg
+            provider="cloudinary"
+            :src="image19"
+            class="w-full card object-cover thumbnail"
+          />
+          <div class="absolute bottom-0 preview-content p-4">
+            <p class="text-base font text-white">
+              Jasa Penerjemah Essay Jakarta untuk Akademik Terbaik 2024
+            </p>
+          </div>
+        </nuxt-link>
       </div>
     </div>
     <Footer />
@@ -309,6 +339,8 @@ const image14 = "/v1717943684/Localifly/16060_p9ncj8.jpg";
 const image15 = "/v1717944088/Localifly/2299_hwnvqx.jpg";
 const image16 = "/v1718153318/Localifly/127905_tmniro.jpg";
 const image17 = "/v1718769338/Localifly/2150171388_mdjd13.jpg";
+const image18 = "/v1720858548/Localifly/lkjl_rxmeeo.jpg";
+const image19 = "/v1720859211/Localifly/lkjloo_vwq5iu.png";
 
 useHead({
   title: "Blog | Resources and insights",
