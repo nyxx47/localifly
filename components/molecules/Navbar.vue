@@ -27,8 +27,8 @@
               <img src="~assets/icons/arrow1.svg" alt="arrow-down" />
             </div>
           </UDropdown>
-          <nuxt-link to="/harga">Harga</nuxt-link>
-          <nuxt-link to="/faq">FAQ</nuxt-link>
+          <nuxt-link to="/blog">Blog</nuxt-link>
+          <nuxt-link to="/career">Become a Translator</nuxt-link>
           <!-- <nuxt-link to="/career" class="n-badge"
             >Become a Translator</nuxt-link
           > -->
@@ -153,24 +153,24 @@ const links = [
     to: "/terjemahan-tersumpah",
     click,
   },
-  {
-    label: "Legalisasi Dokumen",
-    to: "/legalisasi-dokumen",
-    click,
-  },
-  {
-    label: "Proofreading",
-    to: "/proofreading",
-    click,
-  },
-  {
-    label: "Karir",
-    to: "/career",
-    click,
-  },
+  // {
+  //   label: "Legalisasi Dokumen",
+  //   to: "/legalisasi-dokumen",
+  //   click,
+  // },
+  // {
+  //   label: "Proofreading",
+  //   to: "/proofreading",
+  //   click,
+  // },
   {
     label: "Blog",
     to: "/blog",
+    click,
+  },
+  {
+    label: "Become a Translator",
+    to: "/career",
     click,
   },
 ];
