@@ -306,6 +306,51 @@
             </p>
           </div>
         </nuxt-link>
+        <nuxt-link
+          to="blog/jasa-penerjemah-tersumpah-online-jakarta"
+          class="relative grow"
+        >
+          <NuxtImg
+            provider="cloudinary"
+            :src="image20"
+            class="w-full card object-cover thumbnail"
+          />
+          <div class="absolute bottom-0 preview-content p-4">
+            <p class="text-base font text-white">
+              Jasa Penerjemah Tersumpah Online Jakarta Resmi dan Bersertifikat
+            </p>
+          </div>
+        </nuxt-link>
+        <nuxt-link
+          to="blog/jasa-translator-dokumen-jakarta"
+          class="relative grow"
+        >
+          <NuxtImg
+            provider="cloudinary"
+            :src="image21"
+            class="w-full card object-cover thumbnail"
+          />
+          <div class="absolute bottom-0 preview-content p-4">
+            <p class="text-base font text-white">
+              Jasa Translator Dokumen Resmi Jakarta, Sedia 5 Bahasa!
+            </p>
+          </div>
+        </nuxt-link>
+        <nuxt-link
+          to="blog/jasa-penerjemah-dokumen-hukum-jakarta"
+          class="relative grow"
+        >
+          <NuxtImg
+            provider="cloudinary"
+            :src="image22"
+            class="w-full card object-cover thumbnail"
+          />
+          <div class="absolute bottom-0 preview-content p-4">
+            <p class="text-base font text-white">
+              Jasa Penerjemah Dokumen Hukum di Jakarta Legal dan Terpercaya
+            </p>
+          </div>
+        </nuxt-link>
       </div>
     </div>
     <Footer />
@@ -341,6 +386,12 @@ const image16 = "/v1718153318/Localifly/127905_tmniro.jpg";
 const image17 = "/v1718769338/Localifly/2150171388_mdjd13.jpg";
 const image18 = "/v1720858548/Localifly/lkjl_rxmeeo.jpg";
 const image19 = "/v1720859211/Localifly/lkjloo_vwq5iu.png";
+const image20 =
+  "/v1721543948/Localifly/jasa-penerjemah-tersumpah-online-jakarta_m8j1u2.png";
+const image21 =
+  "/v1721545856/Localifly/jasa-translator-dokumen-jakarta_oyundu.png";
+const image22 =
+  "/v1721547181/Localifly/tingey-injury-law-firm-6sl88x150Xs-unsplash_vihd7c.jpg";
 
 useHead({
   title: "Blog | Resources and insights",

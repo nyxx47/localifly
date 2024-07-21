@@ -18,6 +18,7 @@
           provider="cloudinary"
           :src="image"
           class="w-full object-cover h-500 thumbnail"
+          alt="jasa penerjemah essay jakarta"
         />
         <div class="blocks mt-4 mb-56">
           <p class="text-base mt-4 txt-primary">
