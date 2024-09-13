@@ -367,6 +367,21 @@
             </p>
           </div>
         </nuxt-link>
+        <nuxt-link
+          to="blog/jasa-translator-bahasa-jepang"
+          class="relative grow"
+        >
+          <NuxtImg
+            provider="cloudinary"
+            :src="image24"
+            class="w-full card object-cover thumbnail"
+          />
+          <div class="absolute bottom-0 preview-content p-4">
+            <p class="text-base font text-white">
+              Jasa Translator Bahasa Jepang Berpengalaman
+            </p>
+          </div>
+        </nuxt-link>
       </div>
     </div>
     <Footer />
@@ -410,6 +425,7 @@ const image22 =
   "/v1721547181/Localifly/tingey-injury-law-firm-6sl88x150Xs-unsplash_vihd7c.jpg";
 const image23 =
   "/v1721567137/Localifly/luca-bravo-9l_326FISzk-unsplash_mpnkew.jpg";
+const image24 = "/v1726203684/Localifly/32852_bqe8yd.jpg";
 
 useHead({
   title: "Blog | Resources and insights",

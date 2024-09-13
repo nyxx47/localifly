@@ -126,8 +126,8 @@ const items = [
       to: "/terjemahan-tersumpah",
     },
     {
-      label: "Terjemahan Standar",
-      to: "/terjemahan-biasa",
+      label: "Terjemahan Dokumen",
+      to: "/terjemahan-dokumen",
     },
     {
       label: "Legalisasi Dokumen",
