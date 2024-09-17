@@ -438,6 +438,18 @@
             </p>
           </div>
         </nuxt-link>
+        <nuxt-link to="blog/translator-penerjemah" class="relative grow">
+          <NuxtImg
+            provider="cloudinary"
+            :src="image29"
+            class="w-full card object-cover thumbnail"
+          />
+          <div class="absolute bottom-0 preview-content p-4">
+            <p class="text-base font text-white">
+              Jasa Translator Penerjemah Tersumpah Terbaik 2024
+            </p>
+          </div>
+        </nuxt-link>
       </div>
     </div>
     <Footer />
@@ -487,6 +499,7 @@ const image25 =
 const image26 = "/v1726561726/Localifly/unnamed_v86myi.png";
 const image27 = "/v1726562759/Localifly/unnamed_1_mbja2x.png";
 const image28 = "/v1726564550/Localifly/unnamed_2_ubfskk.png";
+const image29 = "/v1726564881/Localifly/unnamed_3_v2wzmn.png";
 
 useHead({
   title: "Blog | Resources and insights",
