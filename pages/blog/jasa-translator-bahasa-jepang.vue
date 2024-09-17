@@ -21,9 +21,6 @@
           class="w-full object-cover h-500 thumbnail"
         />
         <div class="blocks mt-4 mb-56">
-          <p class="text-base font-bold txt-primary mt-12 mb-2 leading-snug">
-            Jasa Proofreading Cepat Jakarta, Perbaiki Tulisan Skripsi Anda!
-          </p>
           <p class="text-base mt-4 txt-primary">
             <strong>Jasa Translator Bahasa Jepang</strong> - Dalam dunia yang
             semakin terhubung ini, bahasa menjadi kunci utama untuk membuka
