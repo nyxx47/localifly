@@ -5,7 +5,8 @@
       <div class="col">
         <NuxtImg
           class="w-10/12"
-          src="/images/illustration-1.png"
+          provider="cloudinary"
+          src="/v1726566660/Localifly/Images/illustration-1_pd20nb.png"
           alt="localifly illustration"
         />
       </div>
