@@ -3,7 +3,12 @@
     <div class="head-wrap">
       <div class="header">
         <div class="wrap">
-          <NuxtImg src="/icons/avatars.svg" alt="avatars" />
+          <NuxtImg
+            provider="cloudinary"
+            src="/v1726567369/Localifly/icons/avatars_cd7bmy.svg"
+            alt="avatars"
+            style="height: 56px"
+          />
           <h2>Become a translator</h2>
           <p>
             Are you a seasoned translator or a specialist fluent in multiple
@@ -32,7 +37,12 @@
       </div>
       <div class="wrap">
         <div class="col">
-          <NuxtImg src="/company.svg" alt="perusahaan" />
+          <NuxtImg
+            provider="cloudinary"
+            src="/v1726567782/Localifly/icons/1_wih7aj.svg"
+            alt="Work from anywhere"
+            style="height: 32px"
+          />
           <h5>Work from anywhere</h5>
           <p>
             You have the freedom to define your workspace. Work when and where
@@ -41,7 +51,12 @@
           <!-- <OrganismsButton content="Learn More" type="secondary" /> -->
         </div>
         <div class="col">
-          <NuxtImg src="/icons/personal.svg" alt="pribadi" />
+          <NuxtImg
+            provider="cloudinary"
+            src="/v1726567782/Localifly/icons/2_j7bep7.svg"
+            alt="Take the jobs that interest you"
+            style="height: 32px"
+          />
           <h5>Take the jobs that interest you</h5>
           <p>
             Our project managers match you with translation tasks aligned with
@@ -50,7 +65,12 @@
           <!-- <OrganismsButton content="Learn More" type="secondary" /> -->
         </div>
         <div class="col">
-          <NuxtImg src="/icons/akademik.svg" alt="akademik" />
+          <NuxtImg
+            provider="cloudinary"
+            src="/v1726567783/Localifly/icons/3_o5itzt.svg"
+            alt="Full support"
+            style="height: 32px"
+          />
           <h5>Full support</h5>
           <p>
             We handle all the administrative tasks and billing, allowing you to
@@ -70,9 +90,11 @@
           <div class="faq-btn" @click="ToggleFaq(item.id)">
             <h2>{{ item.title }}</h2>
             <NuxtImg
-              src="/icons/chevron-down.svg"
+              provider="cloudinary"
+              src="/v1726567902/Localifly/icons/chevron-down_wpqo1v.svg"
               :class="{ isRotate: item.isOpen }"
               alt="chevron-down"
+              style="width: 24px; height: 24px"
             />
           </div>
           <div class="faq-content" :class="{ isShow: item.isOpen }">

@@ -23,7 +23,11 @@
       <h2>Spesialisasi terjemahan bahasa kami</h2>
       <div class="wrap">
         <div class="col">
-          <NuxtImg src="/company.svg" alt="perusahaan" />
+          <NuxtImg
+            provider="cloudinary"
+            src="/v1726567013/Localifly/icons/company_i7x3ql.svg"
+            alt="perusahaan"
+          />
           <h5>Perusahaan</h5>
           <p>
             Terjemahan tersumpah akta pendirian, Izin Prinsip, SIUP, TDP, NPWP,
@@ -31,7 +35,11 @@
           </p>
         </div>
         <div class="col">
-          <NuxtImg src="/icons/personal.svg" alt="pribadi" />
+          <NuxtImg
+            provider="cloudinary"
+            src="/v1726567010/Localifly/icons/personal_zjrcvm.svg"
+            alt="personal"
+          />
           <h5>Pribadi</h5>
           <p>
             Jasa translate tersumpah (sworn translation) KTP, paspor, KK, akta
@@ -39,7 +47,11 @@
           </p>
         </div>
         <div class="col">
-          <NuxtImg src="/icons/akademik.svg" alt="akademik" />
+          <NuxtImg
+            provider="cloudinary"
+            src="/v1726567010/Localifly/icons/akademik_qt0z8f.svg"
+            alt="akademik"
+          />
           <h5>Akademik</h5>
           <p>
             Jasa penerjemah tersumpah ijazah, transkrip nilai, SKHUN, rapor,
@@ -60,7 +72,11 @@
         <div class="languages">
           <div class="language">
             <div class="col">
-              <NuxtImg src="/icons/jp.svg" alt="bahasa jepang" />
+              <NuxtImg
+                provider="cloudinary"
+                src="/v1726567176/Localifly/Images/jp_pmg61v.svg"
+                alt="bahasa jepang"
+              />
               <p>Japanese</p>
               <div class="badge unavailable"><p>Full Booked</p></div>
             </div>
@@ -74,21 +90,33 @@
           </div> -->
           <div class="language">
             <div class="col">
-              <NuxtImg src="/icons/mandarin.svg" alt="bahasa mandarin" />
+              <NuxtImg
+                provider="cloudinary"
+                src="/v1726567178/Localifly/Images/mandarin_tugwea.svg"
+                alt="bahasa mandarin"
+              />
               <p>Mandarin</p>
               <div class="badge unavailable"><p>Full Booked</p></div>
             </div>
           </div>
           <div class="language">
             <div class="col">
-              <NuxtImg src="/icons/uk.svg" alt="bahasa inggris" />
+              <NuxtImg
+                provider="cloudinary"
+                src="/v1726567178/Localifly/Images/uk_nmkmtg.svg"
+                alt="bahasa inggris"
+              />
               <p>English</p>
               <div class="badge available"><p>Available</p></div>
             </div>
           </div>
           <div class="language">
             <div class="col">
-              <NuxtImg src="/icons/dutch.svg" alt="bahasa belanda" />
+              <NuxtImg
+                provider="cloudinary"
+                src="/v1726567177/Localifly/Images/dutch_gbrotu.svg"
+                alt="bahasa belanda"
+              />
               <p>Belanda</p>
               <div class="badge available"><p>Available</p></div>
             </div>
@@ -136,9 +164,11 @@
           <div class="faq-btn" @click="ToggleFaq(item.id)">
             <h2>{{ item.title }}</h2>
             <NuxtImg
-              src="/icons/chevron-down.svg"
+              provider="cloudinary"
+              src="/v1726567902/Localifly/icons/chevron-down_wpqo1v.svg"
               :class="{ isRotate: item.isOpen }"
               alt="chevron-down"
+              style="width: 24px; height: 24px"
             />
           </div>
           <div class="faq-content" :class="{ isShow: item.isOpen }">
@@ -149,9 +179,10 @@
       <div class="box-wrapper">
         <div class="wrap">
           <NuxtImg
-            src="/icons/avatars.svg"
+            provider="cloudinary"
+            src="/v1726567369/Localifly/icons/avatars_cd7bmy.svg"
+            alt="faq"
             style="height: 56px"
-            alt="avatars"
           />
           <h2>Masih Punya Pertanyaan?</h2>
           <p>

@@ -4,9 +4,10 @@
       <div class="header">
         <div class="wrap">
           <NuxtImg
-            src="/icons/sworn.svg"
+            provider="cloudinary"
+            src="/v1726567580/Localifly/icons/sworn_s7srxm.svg"
+            alt="penerjemah tersumpah"
             style="width: 40px; height: 40px"
-            alt="icon penerjemah tersumpah"
             class="mb-4"
           />
           <h2>Layanan terjemahan tersumpah</h2>
@@ -35,7 +36,8 @@
       <div class="wrap">
         <div class="col">
           <NuxtImg
-            src="/icons/pm.svg"
+            provider="cloudinary"
+            src="/v1726567638/Localifly/icons/pm_mse44z.svg"
             alt="Manajer Proyek Pribadi"
             style="width: 32px; height: 32px"
           />
@@ -48,7 +50,8 @@
         </div>
         <div class="col">
           <NuxtImg
-            src="/icons/hq.svg"
+            provider="cloudinary"
+            src="/v1726567683/Localifly/icons/hq_fxdvnr.svg"
             alt="Kualitas terjamin"
             style="width: 32px; height: 32px"
           />
@@ -60,7 +63,8 @@
         </div>
         <div class="col">
           <NuxtImg
-            src="/icons/secure.svg"
+            provider="cloudinary"
+            src="/v1726567735/Localifly/icons/secure_mcppvn.svg"
             alt="Keamanan dan kerahasiaan"
             style="width: 32px; height: 32px"
           />
@@ -121,15 +125,27 @@
       </div>
       <div class="wrap container">
         <div class="col">
-          <NuxtImg src="/icons/1.svg" alt="kirim" />
+          <NuxtImg
+            provider="cloudinary"
+            src="/v1726567782/Localifly/icons/1_wih7aj.svg"
+            alt="kirim"
+          />
           <p>Kirim atau scan dari dokumen yang perlu Anda terjemahkan</p>
         </div>
         <div class="col">
-          <NuxtImg src="/icons/2.svg" alt="penawaran gratis" />
+          <NuxtImg
+            provider="cloudinary"
+            src="/v1726567782/Localifly/icons/2_j7bep7.svg"
+            alt="penawaran gratis"
+          />
           <p>Dapatkan penawaran gratis dalam hitungan menit dan terima</p>
         </div>
         <div class="col">
-          <NuxtImg src="/icons/3.svg" alt="dokumen terjemahan tersumpah" />
+          <NuxtImg
+            provider="cloudinary"
+            src="/v1726567783/Localifly/icons/3_o5itzt.svg"
+            alt="dokumen terjemahan tersumpah"
+          />
           <p>
             Terima dokumen terjemahan tersumpah Anda di rumah atau kantor Anda
           </p>
@@ -146,28 +162,49 @@
       </div>
       <div class="wrap types-wrapper">
         <div class="col">
-          <NuxtImg src="/icons/text.svg" alt="plain text" class="icon-type" />
+          <NuxtImg
+            provider="cloudinary"
+            src="/v1726568000/Localifly/icons/text_tsbbok.svg"
+            alt="plain text"
+            class="icon-type"
+          />
           <p>Plain Text</p>
         </div>
 
         <div class="col">
-          <NuxtImg src="/icons/csv.svg" alt="csv" class="icon-type" />
+          <NuxtImg
+            provider="cloudinary"
+            src="/v1726568000/Localifly/icons/csv_j0gkfe.svg"
+            alt="csv"
+            class="icon-type"
+          />
           <p>CSV</p>
         </div>
         <div class="col">
           <NuxtImg
-            src="/icons/office.svg"
+            provider="cloudinary"
+            src="/v1726568001/Localifly/icons/office_cixahk.svg"
             alt="microsoft office"
             class="icon-type"
           />
           <p>Microsoft Office</p>
         </div>
         <div class="col">
-          <NuxtImg src="/icons/html.svg" alt="html" class="icon-type" />
+          <NuxtImg
+            provider="cloudinary"
+            src="/v1726567999/Localifly/icons/html_avbuia.svg"
+            alt="html"
+            class="icon-type"
+          />
           <p>HTML</p>
         </div>
         <div class="col">
-          <NuxtImg src="/icons/xliff.svg" alt="xliff" class="icon-type" />
+          <NuxtImg
+            provider="cloudinary"
+            src="/v1726568000/Localifly/icons/xliff_mqanza.svg"
+            alt="xliff"
+            class="icon-type"
+          />
           <p>XLIFF</p>
         </div>
       </div>
@@ -182,9 +219,11 @@
           <div class="faq-btn" @click="ToggleFaq(item.id)">
             <h2>{{ item.title }}</h2>
             <NuxtImg
-              src="/icons/chevron-down.svg"
+              provider="cloudinary"
+              src="/v1726567902/Localifly/icons/chevron-down_wpqo1v.svg"
               :class="{ isRotate: item.isOpen }"
               alt="chevron-down"
+              style="width: 24px; height: 24px"
             />
           </div>
           <div class="faq-content" :class="{ isShow: item.isOpen }">
@@ -195,7 +234,8 @@
       <div class="box-wrapper">
         <div class="wrap">
           <NuxtImg
-            src="/icons/avatars.svg"
+            provider="cloudinary"
+            src="/v1726567369/Localifly/icons/avatars_cd7bmy.svg"
             style="height: 56px"
             alt="avatars"
           />
