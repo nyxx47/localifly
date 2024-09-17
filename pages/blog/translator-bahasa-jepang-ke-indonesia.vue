@@ -325,7 +325,7 @@ useHead({
     },
     {
       name: "keywords",
-      content: "translator tersumpah, jepang, jasa penerjemahan, j",
+      content: "translator tersumpah, jepang, jasa penerjemahan",
     },
   ],
 });
